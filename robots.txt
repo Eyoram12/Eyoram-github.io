@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://eyoram12.github.io/Eyoram-github.io/sitemap.xml
