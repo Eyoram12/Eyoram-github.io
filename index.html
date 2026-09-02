@@ -42,10 +42,6 @@
             display: block;
         }
 
-        /* =========================
-           HEADER
-        ========================= */
-
         header {
             background: #12355b;
             color: white;
@@ -62,10 +58,6 @@
             font-size: 1rem;
             opacity: 0.95;
         }
-
-        /* =========================
-           NAVIGATION
-        ========================= */
 
         nav {
             background: #0b2545;
@@ -85,18 +77,14 @@
         nav a {
             display: block;
             color: white;
-            padding: 14px 15px;
-            font-size: 0.92rem;
+            padding: 14px 13px;
+            font-size: 0.9rem;
             transition: 0.3s;
         }
 
         nav a:hover {
             background: #1c4d7d;
         }
-
-        /* =========================
-           GENERAL
-        ========================= */
 
         section {
             max-width: 1150px;
@@ -119,9 +107,7 @@
             font-size: 1.03rem;
         }
 
-        /* =========================
-           HERO
-        ========================= */
+        /* HERO */
 
         .hero {
             max-width: 1200px;
@@ -182,9 +168,7 @@
             box-shadow: 0 10px 30px rgba(0,0,0,0.18);
         }
 
-        /* =========================
-           BUTTONS
-        ========================= */
+        /* BUTTONS */
 
         .buttons {
             display: flex;
@@ -219,9 +203,17 @@
             color: white;
         }
 
-        /* =========================
-           ABOUT
-        ========================= */
+        .btn-cv {
+            background: #2c6e91;
+            border-color: #2c6e91;
+        }
+
+        .btn-cv:hover {
+            background: #1c4d7d;
+            border-color: #1c4d7d;
+        }
+
+        /* ABOUT */
 
         .about-grid {
             display: grid;
@@ -246,9 +238,7 @@
             margin-bottom: 15px;
         }
 
-        /* =========================
-           TAGS
-        ========================= */
+        /* TAGS */
 
         .tags {
             display: flex;
@@ -265,9 +255,7 @@
             font-weight: 500;
         }
 
-        /* =========================
-           CARDS
-        ========================= */
+        /* CARDS */
 
         .cards {
             display: grid;
@@ -297,9 +285,7 @@
             color: #5d6873;
         }
 
-        /* =========================
-           RESEARCH
-        ========================= */
+        /* RESEARCH */
 
         .research-grid {
             display: grid;
@@ -320,9 +306,7 @@
             margin-bottom: 10px;
         }
 
-        /* =========================
-           PUBLICATIONS
-        ========================= */
+        /* PUBLICATIONS */
 
         .publication-list {
             display: grid;
@@ -359,9 +343,7 @@
             font-weight: bold;
         }
 
-        /* =========================
-           PORTFOLIO
-        ========================= */
+        /* PORTFOLIO */
 
         .portfolio-grid {
             display: grid;
@@ -391,9 +373,41 @@
             color: #5d6873;
         }
 
-        /* =========================
-           GALLERY
-        ========================= */
+        /* CV */
+
+        .cv-section {
+            background: #eaf0f7;
+            text-align: center;
+        }
+
+        .cv-box {
+            max-width: 850px;
+            margin: auto;
+            background: white;
+            padding: 45px 35px;
+            border-radius: 12px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+        }
+
+        .cv-box h3 {
+            color: #12355b;
+            font-size: 1.6rem;
+            margin-bottom: 15px;
+        }
+
+        .cv-box p {
+            color: #59636e;
+            margin-bottom: 25px;
+        }
+
+        .cv-buttons {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        /* GALLERY */
 
         .gallery {
             display: grid;
@@ -420,9 +434,7 @@
             color: #12355b;
         }
 
-        /* =========================
-           PROFILES
-        ========================= */
+        /* PROFILES */
 
         .profile-links {
             max-width: 800px;
@@ -449,9 +461,7 @@
             word-break: break-word;
         }
 
-        /* =========================
-           CONTACT
-        ========================= */
+        /* CONTACT */
 
         .contact-grid {
             display: grid;
@@ -520,9 +530,7 @@
             font-size: 1rem;
         }
 
-        /* =========================
-           FOOTER
-        ========================= */
+        /* FOOTER */
 
         footer {
             background: #12355b;
@@ -535,9 +543,7 @@
             margin: 5px 0;
         }
 
-        /* =========================
-           RESPONSIVE
-        ========================= */
+        /* RESPONSIVE */
 
         @media (max-width: 950px) {
 
@@ -618,6 +624,18 @@
             section h2 {
                 font-size: 1.8rem;
             }
+
+            .cv-box {
+                padding: 35px 20px;
+            }
+
+            .cv-buttons {
+                flex-direction: column;
+            }
+
+            .cv-buttons .btn {
+                width: 100%;
+            }
         }
 
     </style>
@@ -625,814 +643,730 @@
 
 <body>
 
-    <!-- =========================
-         HEADER
-    ========================= -->
+<header>
+    <h1>Getahun Bedada</h1>
+    <p>
+        Public Health | Field Epidemiology | Research | Health Data Analysis
+    </p>
+</header>
 
-    <header>
+<nav>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#research">Research</a></li>
+        <li><a href="#publications">Publications</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#cv">CV</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#profiles">Profiles</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
 
-        <h1>Getahun Bedada</h1>
+<!-- HOME -->
+
+<section class="hero" id="home">
+
+    <div class="hero-text">
+
+        <span class="hero-label">
+            PUBLIC HEALTH • EPIDEMIOLOGY • RESEARCH
+        </span>
+
+        <h2>
+            Public Health Researcher and Field Epidemiology Professional
+        </h2>
+
+        <h3>
+            Using health data and epidemiological methods to generate
+            useful public health evidence
+        </h3>
 
         <p>
-            Public Health | Field Epidemiology | Research | Health Data Analysis
+            I am Getahun Bedada, a public health professional with interests
+            in field epidemiology, disease surveillance, public health
+            research, and health data analysis.
         </p>
 
-    </header>
+        <p>
+            My interests include understanding disease patterns, examining
+            public health risk factors, analyzing health data, and applying
+            epidemiological methods to support evidence-based decision making.
+        </p>
 
+        <div class="buttons">
 
-    <!-- =========================
-         NAVIGATION
-    ========================= -->
+            <a class="btn" href="#about">About Me</a>
 
-    <nav>
+            <a class="btn" href="#research">My Research</a>
 
-        <ul>
+            <a class="btn btn-cv" href="#cv">📄 My CV</a>
 
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#research">Research</a></li>
-            <li><a href="#publications">Publications</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#gallery">Gallery</a></li>
-            <li><a href="#profiles">Profiles</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <a class="btn btn-outline" href="#contact">Contact Me</a>
 
-        </ul>
+        </div>
 
-    </nav>
+    </div>
 
+    <div class="hero-image">
 
-    <!-- =========================
-         HOME
-    ========================= -->
+        <img src="https://eyoram12.github.io/Eyoram-github.io/profile.jpg"
+             alt="Getahun Bedada, public health and field epidemiology professional">
 
-    <section class="hero" id="home">
+    </div>
 
-        <div class="hero-text">
+</section>
 
-            <span class="hero-label">
-                PUBLIC HEALTH • EPIDEMIOLOGY • RESEARCH
-            </span>
+<!-- ABOUT -->
 
-            <h2>
-                Public Health Researcher and Field Epidemiology Professional
-            </h2>
+<section id="about">
+
+    <h2>About Me</h2>
+
+    <p class="section-intro">
+        Public health professional interested in field epidemiology,
+        disease surveillance, research, and health data analysis.
+    </p>
+
+    <div class="about-grid">
+
+        <div class="about-card">
+
+            <h3>Professional Background</h3>
+
+            <p>
+                I am Getahun Bedada, a public health professional with
+                interests in field epidemiology, disease surveillance,
+                epidemiological research, and health data analysis.
+            </p>
+
+            <p>
+                My professional interests include understanding disease
+                patterns, identifying important risk factors, evaluating
+                surveillance data, and applying epidemiological methods
+                to public health research.
+            </p>
+
+            <p>
+                I am particularly interested in research that connects
+                epidemiological evidence with practical public health
+                decision making.
+            </p>
+
+        </div>
+
+        <div class="about-card">
+
+            <h3>Education and Training</h3>
+
+            <p>
+                <strong>Public Health</strong>
+            </p>
+
+            <p>
+                My academic background in public health provides a foundation
+                in epidemiology, biostatistics, research methods, disease
+                prevention, and health systems.
+            </p>
+
+            <p>
+                <strong>Field Epidemiology</strong>
+            </p>
+
+            <p>
+                My field epidemiology training strengthens my interests in
+                disease surveillance, epidemiological investigation, health
+                data analysis, and evidence-based public health practice.
+            </p>
+
+        </div>
+
+        <div class="about-card">
+
+            <h3>Research Interests</h3>
+
+            <div class="tags">
+
+                <span class="tag">Epidemiology</span>
+                <span class="tag">Disease Surveillance</span>
+                <span class="tag">Malaria Research</span>
+                <span class="tag">Climate and Health</span>
+                <span class="tag">Health Data Analysis</span>
+                <span class="tag">Public Health Research</span>
+                <span class="tag">Biostatistics</span>
+                <span class="tag">Time Series Analysis</span>
+
+            </div>
+
+        </div>
+
+        <div class="about-card">
+
+            <h3>Professional Approach</h3>
+
+            <p>
+                I believe that good public health decisions should be
+                supported by reliable data and sound epidemiological
+                evidence.
+            </p>
+
+            <p>
+                My approach is to combine public health knowledge,
+                epidemiological methods, statistical analysis, and clear
+                interpretation of health data to address important public
+                health questions.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- SERVICES -->
+
+<section id="services">
+
+    <h2>Professional Services</h2>
+
+    <p class="section-intro">
+        Areas where I can provide research and public health support.
+    </p>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>Research Support</h3>
+            <p>
+                Support with research planning, study design, literature
+                review, data interpretation, and scientific writing.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Data Analysis</h3>
+            <p>
+                Support with descriptive statistics, epidemiological
+                analysis, regression methods, data interpretation,
+                and presentation of findings.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Epidemiology</h3>
+            <p>
+                Support in disease surveillance, epidemiological analysis,
+                investigation of public health problems, and interpretation
+                of disease patterns.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Academic Support</h3>
+            <p>
+                Support with research reports, scientific manuscripts,
+                presentations, research documentation, and academic work.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- RESEARCH -->
+
+<section id="research">
+
+    <h2>Research Areas</h2>
+
+    <p class="section-intro">
+        My research interests focus on public health problems and the
+        use of epidemiological and statistical methods to generate
+        useful evidence.
+    </p>
+
+    <div class="research-grid">
+
+        <div class="research-card">
+
+            <h3>Malaria Research</h3>
+
+            <p>
+                Epidemiology, disease trends, risk factors, surveillance,
+                and analysis of malaria patterns using routine and
+                epidemiological data.
+            </p>
+
+        </div>
+
+        <div class="research-card">
+
+            <h3>Climate and Health</h3>
+
+            <p>
+                Analysis of relationships between climate variability,
+                environmental factors, and infectious diseases, including
+                the assessment of time-lagged effects.
+            </p>
+
+        </div>
+
+        <div class="research-card">
+
+            <h3>Disease Surveillance</h3>
+
+            <p>
+                Analysis and evaluation of public health surveillance
+                systems, reporting patterns, disease trends, and
+                surveillance data quality.
+            </p>
+
+        </div>
+
+        <div class="research-card">
+
+            <h3>Forecasting and Time Series</h3>
+
+            <p>
+                Application of time series and forecasting methods to
+                understand disease patterns and support future public
+                health planning.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- PUBLICATIONS -->
+
+<section id="publications">
+
+    <h2>Publications and Research</h2>
+
+    <p class="section-intro">
+        Selected research work, manuscripts, and ongoing academic projects.
+    </p>
+
+    <div class="publication-list">
+
+        <div class="publication">
 
             <h3>
-                Using health data and epidemiological methods to generate
-                useful public health evidence
+                Malaria Research in Haramaya District, Eastern Ethiopia
             </h3>
 
             <p>
-                I am Getahun Bedada, a public health professional with interests
-                in field epidemiology, disease surveillance, public health
-                research, and health data analysis.
+                Current research work focusing on malaria epidemiology,
+                disease patterns, risk factors, and public health evidence
+                in Haramaya District, Oromia Region, Eastern Ethiopia.
             </p>
 
             <p>
-                My interests include understanding disease patterns, examining
-                public health risk factors, analyzing health data, and applying
-                epidemiological methods to support evidence-based decision making.
+                <strong>Journal:</strong>
+                Journal of Interventional Epidemiology and Public Health (JIEPH)
             </p>
 
-            <div class="buttons">
+            <p>
+                <strong>Research focus:</strong>
+                Malaria epidemiology and public health
+            </p>
 
-                <a class="btn" href="#about">
-                    About Me
+            <span class="status">
+                Under Review
+            </span>
+
+        </div>
+
+        <div class="publication">
+
+            <h3>
+                Climate Variability and Malaria Research
+            </h3>
+
+            <p>
+                Research interest in assessing the relationship between
+                climate variability and malaria incidence, including
+                rainfall, temperature, humidity, and possible time-lagged
+                effects.
+            </p>
+
+            <p>
+                <strong>Methods of interest:</strong>
+                Time series analysis, regression analysis, and forecasting.
+            </p>
+
+            <span class="status">
+                Research Project
+            </span>
+
+        </div>
+
+        <div class="publication">
+
+            <h3>
+                Disease Surveillance and Health Data Analysis
+            </h3>
+
+            <p>
+                Research interests include surveillance data analysis,
+                disease trends, reporting patterns, and the use of routine
+                health information to support public health decisions.
+            </p>
+
+            <span class="status">
+                Research Interest
+            </span>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- PORTFOLIO -->
+
+<section id="portfolio">
+
+    <h2>Professional Portfolio</h2>
+
+    <p class="section-intro">
+        Areas of academic, research, epidemiological, and data-related work.
+    </p>
+
+    <div class="portfolio-grid">
+
+        <div class="portfolio-item">
+            <h3>Research Projects</h3>
+            <p>
+                Epidemiological and public health research projects
+                addressing important health questions.
+            </p>
+        </div>
+
+        <div class="portfolio-item">
+            <h3>Health Data Analysis</h3>
+            <p>
+                Analysis and interpretation of health and epidemiological
+                data using appropriate statistical methods.
+            </p>
+        </div>
+
+        <div class="portfolio-item">
+            <h3>Scientific Writing</h3>
+            <p>
+                Research reports, academic manuscripts, technical
+                documents, and scientific presentations.
+            </p>
+        </div>
+
+        <div class="portfolio-item">
+            <h3>Research Communication</h3>
+            <p>
+                Presentation and communication of research findings
+                for academic and public health audiences.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- CV -->
+
+<section id="cv" class="cv-section">
+
+    <h2>Curriculum Vitae</h2>
+
+    <p class="section-intro">
+        Learn more about my education, professional experience,
+        technical skills, research interests, and professional background.
+    </p>
+
+    <div class="cv-box">
+
+        <h3>Getahun Bedada Feye</h3>
+
+        <p>
+            Public Health Professional | Field Epidemiology |
+            Public Health Research | Health Data Analysis
+        </p>
+
+        <p>
+            My CV provides an overview of my academic background,
+            professional experience, language skills, software skills,
+            and areas of professional and research interest.
+        </p>
+
+        <div class="cv-buttons">
+
+            <a class="btn btn-cv"
+               href="https://eyoram12.github.io/Eyoram-github.io/Getahun_Bedada_Feye_CV.pdf"
+               target="_blank"
+               rel="noopener noreferrer">
+
+                👁 View My CV
+
+            </a>
+
+            <a class="btn"
+               href="https://eyoram12.github.io/Eyoram-github.io/Getahun_Bedada_Feye_CV.pdf"
+               download>
+
+                📄 Download CV
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- GALLERY -->
+
+<section id="gallery">
+
+    <h2>Professional Gallery</h2>
+
+    <p class="section-intro">
+        Selected academic, research, and professional activities.
+    </p>
+
+    <div class="gallery">
+
+        <div class="gallery-item">
+
+            <img src="https://eyoram12.github.io/Eyoram-github.io/research.jpg"
+                 alt="Getahun Bedada during a research activity">
+
+            <h3>Research Activity</h3>
+
+        </div>
+
+        <div class="gallery-item">
+
+            <img src="https://eyoram12.github.io/Eyoram-github.io/certificate.jpg"
+                 alt="Professional certificate">
+
+            <h3>Professional Certificate</h3>
+
+        </div>
+
+        <div class="gallery-item">
+
+            <img src="https://eyoram12.github.io/Eyoram-github.io/presentation.jpg"
+                 alt="Research presentation">
+
+            <h3>Research Presentation</h3>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- PROFESSIONAL PROFILES -->
+
+<section id="profiles">
+
+    <h2>Professional Profiles</h2>
+
+    <p class="section-intro">
+        Connect with me through my professional and research profiles.
+    </p>
+
+    <div class="profile-links">
+
+        <div class="profile-link">
+
+            <strong>LinkedIn</strong>
+
+            <a href="https://www.linkedin.com/in/eyoram-chrsts-b42883244"
+               target="_blank"
+               rel="noopener noreferrer">
+
+                linkedin.com/in/eyoram-chrsts-b42883244
+
+            </a>
+
+        </div>
+
+        <div class="profile-link">
+
+            <strong>ORCID</strong>
+
+            <a href="https://orcid.org/0009-0007-8182-3648"
+               target="_blank"
+               rel="noopener noreferrer">
+
+                ORCID: 0009-0007-8182-3648
+
+            </a>
+
+        </div>
+
+        <div class="profile-link">
+
+            <strong>Email</strong>
+
+            <a href="mailto:bedanehgetaneh@gmail.com">
+
+                bedanehgetaneh@gmail.com
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- CONTACT -->
+
+<section id="contact">
+
+    <h2>Contact Me</h2>
+
+    <p class="section-intro">
+        For research collaboration, academic support, data analysis,
+        or professional opportunities, please get in touch.
+    </p>
+
+    <div class="contact-grid">
+
+        <div class="contact-info">
+
+            <h3>Get in Touch</h3>
+
+            <p>
+                <strong>Email:</strong><br>
+
+                <a href="mailto:bedanehgetaneh@gmail.com">
+                    bedanehgetaneh@gmail.com
                 </a>
+            </p>
 
-                <a class="btn" href="#research">
-                    My Research
-                </a>
-
-                <a class="btn btn-outline" href="#contact">
-                    Contact Me
-                </a>
-
-            </div>
-
-        </div>
-
-
-        <!-- PROFILE PHOTO -->
-
-        <div class="hero-image">
-
-            <img src="https://eyoram12.github.io/Eyoram-github.io/profile.jpg"
-                 alt="Getahun Bedada, public health and field epidemiology professional">
-
-        </div>
-
-    </section>
-
-
-    <!-- =========================
-         ABOUT
-    ========================= -->
-
-    <section id="about">
-
-        <h2>About Me</h2>
-
-        <p class="section-intro">
-            Public health professional interested in field epidemiology,
-            disease surveillance, research, and health data analysis.
-        </p>
-
-
-        <div class="about-grid">
-
-
-            <div class="about-card">
-
-                <h3>Professional Background</h3>
-
-                <p>
-                    I am Getahun Bedada, a public health professional with
-                    interests in field epidemiology, disease surveillance,
-                    epidemiological research, and health data analysis.
-                </p>
-
-                <p>
-                    My professional interests include understanding disease
-                    patterns, identifying important risk factors, evaluating
-                    surveillance data, and applying epidemiological methods
-                    to public health research.
-                </p>
-
-                <p>
-                    I am particularly interested in research that connects
-                    epidemiological evidence with practical public health
-                    decision making.
-                </p>
-
-            </div>
-
-
-            <div class="about-card">
-
-                <h3>Education and Training</h3>
-
-                <p>
-                    <strong>Public Health</strong>
-                </p>
-
-                <p>
-                    My academic background in public health provides a foundation
-                    in epidemiology, biostatistics, research methods, disease
-                    prevention, and health systems.
-                </p>
-
-                <p>
-                    <strong>Field Epidemiology</strong>
-                </p>
-
-                <p>
-                    My field epidemiology training strengthens my interests in
-                    disease surveillance, epidemiological investigation, health
-                    data analysis, and evidence-based public health practice.
-                </p>
-
-            </div>
-
-
-            <div class="about-card">
-
-                <h3>Research Interests</h3>
-
-                <div class="tags">
-
-                    <span class="tag">Epidemiology</span>
-                    <span class="tag">Disease Surveillance</span>
-                    <span class="tag">Malaria Research</span>
-                    <span class="tag">Climate and Health</span>
-                    <span class="tag">Health Data Analysis</span>
-                    <span class="tag">Public Health Research</span>
-                    <span class="tag">Biostatistics</span>
-                    <span class="tag">Time Series Analysis</span>
-
-                </div>
-
-            </div>
-
-
-            <div class="about-card">
-
-                <h3>Professional Approach</h3>
-
-                <p>
-                    I believe that good public health decisions should be
-                    supported by reliable data and sound epidemiological
-                    evidence.
-                </p>
-
-                <p>
-                    My approach is to combine public health knowledge,
-                    epidemiological methods, statistical analysis, and clear
-                    interpretation of health data to address important public
-                    health questions.
-                </p>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- =========================
-         SERVICES
-    ========================= -->
-
-    <section id="services">
-
-        <h2>Professional Services</h2>
-
-        <p class="section-intro">
-            Areas where I can provide research and public health support.
-        </p>
-
-
-        <div class="cards">
-
-            <div class="card">
-
-                <h3>Research Support</h3>
-
-                <p>
-                    Support with research planning, study design, literature
-                    review, data interpretation, and scientific writing.
-                </p>
-
-            </div>
-
-
-            <div class="card">
-
-                <h3>Data Analysis</h3>
-
-                <p>
-                    Support with descriptive statistics, epidemiological
-                    analysis, regression methods, data interpretation,
-                    and presentation of findings.
-                </p>
-
-            </div>
-
-
-            <div class="card">
-
-                <h3>Epidemiology</h3>
-
-                <p>
-                    Support in disease surveillance, epidemiological analysis,
-                    investigation of public health problems, and interpretation
-                    of disease patterns.
-                </p>
-
-            </div>
-
-
-            <div class="card">
-
-                <h3>Academic Support</h3>
-
-                <p>
-                    Support with research reports, scientific manuscripts,
-                    presentations, research documentation, and academic work.
-                </p>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- =========================
-         RESEARCH
-    ========================= -->
-
-    <section id="research">
-
-        <h2>Research Areas</h2>
-
-        <p class="section-intro">
-            My research interests focus on public health problems and the
-            use of epidemiological and statistical methods to generate
-            useful evidence.
-        </p>
-
-
-        <div class="research-grid">
-
-
-            <div class="research-card">
-
-                <h3>Malaria Research</h3>
-
-                <p>
-                    Epidemiology, disease trends, risk factors, surveillance,
-                    and analysis of malaria patterns using routine and
-                    epidemiological data.
-                </p>
-
-            </div>
-
-
-            <div class="research-card">
-
-                <h3>Climate and Health</h3>
-
-                <p>
-                    Analysis of relationships between climate variability,
-                    environmental factors, and infectious diseases, including
-                    the assessment of time-lagged effects.
-                </p>
-
-            </div>
-
-
-            <div class="research-card">
-
-                <h3>Disease Surveillance</h3>
-
-                <p>
-                    Analysis and evaluation of public health surveillance
-                    systems, reporting patterns, disease trends, and
-                    surveillance data quality.
-                </p>
-
-            </div>
-
-
-            <div class="research-card">
-
-                <h3>Forecasting and Time Series</h3>
-
-                <p>
-                    Application of time series and forecasting methods to
-                    understand disease patterns and support future public
-                    health planning.
-                </p>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- =========================
-         PUBLICATIONS
-    ========================= -->
-
-    <section id="publications">
-
-        <h2>Publications and Research</h2>
-
-        <p class="section-intro">
-            Selected research work, manuscripts, and ongoing academic projects.
-        </p>
-
-
-        <div class="publication-list">
-
-
-            <div class="publication">
-
-                <h3>
-                    Malaria Research in Haramaya District, Eastern Ethiopia
-                </h3>
-
-                <p>
-                    Current research work focusing on malaria epidemiology,
-                    disease patterns, risk factors, and public health evidence
-                    in Haramaya District, Oromia Region, Eastern Ethiopia.
-                </p>
-
-                <p>
-                    <strong>Journal:</strong>
-                    Journal of Interventional Epidemiology and Public Health (JIEPH)
-                </p>
-
-                <p>
-                    <strong>Research focus:</strong>
-                    Malaria epidemiology and public health
-                </p>
-
-                <span class="status">
-                    Under Review
-                </span>
-
-            </div>
-
-
-            <div class="publication">
-
-                <h3>
-                    Climate Variability and Malaria Research
-                </h3>
-
-                <p>
-                    Research interest in assessing the relationship between
-                    climate variability and malaria incidence, including
-                    rainfall, temperature, humidity, and possible time-lagged
-                    effects.
-                </p>
-
-                <p>
-                    <strong>Methods of interest:</strong>
-                    Time series analysis, regression analysis, and forecasting.
-                </p>
-
-                <span class="status">
-                    Research Project
-                </span>
-
-            </div>
-
-
-            <div class="publication">
-
-                <h3>
-                    Disease Surveillance and Health Data Analysis
-                </h3>
-
-                <p>
-                    Research interests include surveillance data analysis,
-                    disease trends, reporting patterns, and the use of routine
-                    health information to support public health decisions.
-                </p>
-
-                <span class="status">
-                    Research Interest
-                </span>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- =========================
-         PORTFOLIO
-    ========================= -->
-
-    <section id="portfolio">
-
-        <h2>Professional Portfolio</h2>
-
-        <p class="section-intro">
-            Areas of academic, research, epidemiological, and data-related work.
-        </p>
-
-
-        <div class="portfolio-grid">
-
-
-            <div class="portfolio-item">
-
-                <h3>Research Projects</h3>
-
-                <p>
-                    Epidemiological and public health research projects
-                    addressing important health questions.
-                </p>
-
-            </div>
-
-
-            <div class="portfolio-item">
-
-                <h3>Health Data Analysis</h3>
-
-                <p>
-                    Analysis and interpretation of health and epidemiological
-                    data using appropriate statistical methods.
-                </p>
-
-            </div>
-
-
-            <div class="portfolio-item">
-
-                <h3>Scientific Writing</h3>
-
-                <p>
-                    Research reports, academic manuscripts, technical
-                    documents, and scientific presentations.
-                </p>
-
-            </div>
-
-
-            <div class="portfolio-item">
-
-                <h3>Research Communication</h3>
-
-                <p>
-                    Presentation and communication of research findings
-                    for academic and public health audiences.
-                </p>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- =========================
-         GALLERY
-    ========================= -->
-
-    <section id="gallery">
-
-        <h2>Professional Gallery</h2>
-
-        <p class="section-intro">
-            Selected academic, research, and professional activities.
-        </p>
-
-
-        <div class="gallery">
-
-
-            <div class="gallery-item">
-
-                <img src="https://eyoram12.github.io/Eyoram-github.io/research.jpg"
-                     alt="Getahun Bedada during a research activity">
-
-                <h3>
-                    Research Activity
-                </h3>
-
-            </div>
-
-
-            <div class="gallery-item">
-
-                <img src="https://eyoram12.github.io/Eyoram-github.io/certificate.jpg"
-                     alt="Professional certificate">
-
-                <h3>
-                    Professional Certificate
-                </h3>
-
-            </div>
-
-
-            <div class="gallery-item">
-
-                <img src="https://eyoram12.github.io/Eyoram-github.io/presentation.jpg"
-                     alt="Research presentation">
-
-                <h3>
-                    Research Presentation
-                </h3>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- =========================
-         PROFESSIONAL PROFILES
-    ========================= -->
-
-    <section id="profiles">
-
-        <h2>Professional Profiles</h2>
-
-        <p class="section-intro">
-            Connect with me through my professional and research profiles.
-        </p>
-
-
-        <div class="profile-links">
-
-
-            <div class="profile-link">
-
-                <strong>LinkedIn</strong>
+            <p>
+                <strong>LinkedIn:</strong><br>
 
                 <a href="https://www.linkedin.com/in/eyoram-chrsts-b42883244"
                    target="_blank"
                    rel="noopener noreferrer">
 
-                    linkedin.com/in/eyoram-chrsts-b42883244
+                    View my LinkedIn profile
 
                 </a>
+            </p>
 
-            </div>
-
-
-            <div class="profile-link">
-
-                <strong>ORCID</strong>
+            <p>
+                <strong>ORCID:</strong><br>
 
                 <a href="https://orcid.org/0009-0007-8182-3648"
                    target="_blank"
                    rel="noopener noreferrer">
 
-                    ORCID: 0009-0007-8182-3648
+                    0009-0007-8182-3648
 
                 </a>
+            </p>
 
-            </div>
+            <p>
+                <strong>Professional interests:</strong><br>
 
-
-            <div class="profile-link">
-
-                <strong>Email</strong>
-
-                <a href="mailto:bedanehgetaneh@gmail.com">
-
-                    bedanehgetaneh@gmail.com
-
-                </a>
-
-            </div>
+                Public health research, field epidemiology, disease
+                surveillance, malaria research, climate and health,
+                and health data analysis.
+            </p>
 
         </div>
 
-    </section>
+        <div class="contact-form">
 
+            <h3>Send a Message</h3>
 
-    <!-- =========================
-         CONTACT
-    ========================= -->
+            <form action="https://formspree.io/f/xwlkovzg"
+                  method="POST">
 
-    <section id="contact">
+                <div class="form-group">
 
-        <h2>Contact Me</h2>
+                    <label for="name">Name</label>
 
-        <p class="section-intro">
-            For research collaboration, academic support, data analysis,
-            or professional opportunities, please get in touch.
-        </p>
+                    <input type="text"
+                           id="name"
+                           name="name"
+                           placeholder="Your name"
+                           required>
 
+                </div>
 
-        <div class="contact-grid">
+                <div class="form-group">
 
+                    <label for="email">Email</label>
 
-            <div class="contact-info">
+                    <input type="email"
+                           id="email"
+                           name="email"
+                           placeholder="Your email"
+                           required>
 
-                <h3>Get in Touch</h3>
+                </div>
 
-                <p>
-                    <strong>Email:</strong><br>
+                <div class="form-group">
 
-                    <a href="mailto:bedanehgetaneh@gmail.com">
-                        bedanehgetaneh@gmail.com
-                    </a>
-                </p>
+                    <label for="subject">Subject</label>
 
+                    <input type="text"
+                           id="subject"
+                           name="subject"
+                           placeholder="Subject"
+                           required>
 
-                <p>
-                    <strong>LinkedIn:</strong><br>
+                </div>
 
-                    <a href="https://www.linkedin.com/in/eyoram-chrsts-b42883244"
-                       target="_blank"
-                       rel="noopener noreferrer">
+                <div class="form-group">
 
-                        View my LinkedIn profile
+                    <label for="message">Message</label>
 
-                    </a>
-                </p>
+                    <textarea id="message"
+                              name="message"
+                              placeholder="Write your message here..."
+                              required></textarea>
 
+                </div>
 
-                <p>
-                    <strong>ORCID:</strong><br>
+                <button class="btn" type="submit">
+                    Send Message
+                </button>
 
-                    <a href="https://orcid.org/0009-0007-8182-3648"
-                       target="_blank"
-                       rel="noopener noreferrer">
-
-                        0009-0007-8182-3648
-
-                    </a>
-                </p>
-
-
-                <p>
-                    <strong>Professional interests:</strong><br>
-
-                    Public health research, field epidemiology, disease
-                    surveillance, malaria research, climate and health,
-                    and health data analysis.
-                </p>
-
-            </div>
-
-
-            <div class="contact-form">
-
-                <h3>Send a Message</h3>
-
-
-                <form action="https://formspree.io/f/xwlkovzg"
-                      method="POST">
-
-
-                    <div class="form-group">
-
-                        <label for="name">
-                            Name
-                        </label>
-
-                        <input type="text"
-                               id="name"
-                               name="name"
-                               placeholder="Your name"
-                               required>
-
-                    </div>
-
-
-                    <div class="form-group">
-
-                        <label for="email">
-                            Email
-                        </label>
-
-                        <input type="email"
-                               id="email"
-                               name="email"
-                               placeholder="Your email"
-                               required>
-
-                    </div>
-
-
-                    <div class="form-group">
-
-                        <label for="subject">
-                            Subject
-                        </label>
-
-                        <input type="text"
-                               id="subject"
-                               name="subject"
-                               placeholder="Subject"
-                               required>
-
-                    </div>
-
-
-                    <div class="form-group">
-
-                        <label for="message">
-                            Message
-                        </label>
-
-                        <textarea id="message"
-                                  name="message"
-                                  placeholder="Write your message here..."
-                                  required></textarea>
-
-                    </div>
-
-
-                    <button class="btn" type="submit">
-                        Send Message
-                    </button>
-
-
-                </form>
-
-            </div>
+            </form>
 
         </div>
 
-    </section>
+    </div>
 
+</section>
 
-    <!-- =========================
-         FOOTER
-    ========================= -->
+<!-- FOOTER -->
 
-    <footer>
+<footer>
 
-        <p>
-            &copy; 2026 Getahun Bedada. All rights reserved.
-        </p>
+    <p>
+        &copy; 2026 Getahun Bedada. All rights reserved.
+    </p>
 
-        <p>
-            Public Health | Field Epidemiology | Research
-        </p>
+    <p>
+        Public Health | Field Epidemiology | Research
+    </p>
 
-        <p>
-            Built for professional and academic networking.
-        </p>
+    <p>
+        Built for professional and academic networking.
+    </p>
 
-    </footer>
-
+</footer>
 
 </body>
 </html>
