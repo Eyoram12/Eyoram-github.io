@@ -149,21 +149,15 @@
             margin: auto;
         }
 
-        /* OVERVIEW */
+        /* RESEARCH OVERVIEW */
 
-        .overview {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 45px;
-            align-items: center;
-        }
-
-        .overview-image img {
-            width: 100%;
-            height: 430px;
-            object-fit: cover;
-            border-radius: 18px;
-            box-shadow: 0 12px 35px rgba(0, 0, 0, 0.12);
+        .overview-text {
+            max-width: 900px;
+            margin: auto;
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.07);
         }
 
         .overview-text h3 {
@@ -188,29 +182,15 @@
         .project-card {
             background: white;
             border-radius: 18px;
-            overflow: hidden;
+            padding: 30px;
             box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
             transition: 0.3s;
+            border-top: 4px solid #0b63ce;
         }
 
         .project-card:hover {
             transform: translateY(-5px);
             box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
-        }
-
-        .project-image {
-            height: 230px;
-            overflow: hidden;
-        }
-
-        .project-image img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-
-        .project-content {
-            padding: 28px;
         }
 
         .project-number {
@@ -498,10 +478,6 @@
                 order: -1;
             }
 
-            .overview {
-                grid-template-columns: 1fr;
-            }
-
             .projects {
                 grid-template-columns: 1fr;
             }
@@ -566,6 +542,10 @@
                 grid-template-columns: 1fr;
             }
 
+            .overview-text {
+                padding: 28px 22px;
+            }
+
             .approach {
                 padding: 28px 22px;
             }
@@ -606,9 +586,12 @@
         }
 
     </style>
+
 </head>
 
+
 <body>
+
 
     <!-- HEADER -->
 
@@ -660,6 +643,7 @@
 
             </div>
 
+
             <div class="hero-image">
 
                 <img src="research.jpg"
@@ -680,7 +664,9 @@
 
             <div class="section-title">
 
-                <h2>Research Overview</h2>
+                <h2>
+                    Research Overview
+                </h2>
 
                 <p>
                     Selected areas of epidemiological and public health
@@ -689,43 +675,33 @@
 
             </div>
 
-            <div class="overview">
 
-                <div class="overview-image">
+            <div class="overview-text">
 
-                    <img src="presentation.jpg"
-                        alt="Public health research presentation">
+                <h3>
+                    Evidence-Based Public Health Research
+                </h3>
 
-                </div>
+                <p>
+                    My research interests focus on applying epidemiological
+                    methods and health data to understand disease patterns,
+                    identify determinants, evaluate surveillance systems,
+                    and support public health interventions.
+                </p>
 
-                <div class="overview-text">
+                <p>
+                    Particular interests include malaria epidemiology,
+                    climate-sensitive diseases, disease surveillance,
+                    temporal trends, seasonal patterns, spatial analysis,
+                    forecasting, and statistical modelling.
+                </p>
 
-                    <h3>
-                        Evidence-Based Public Health Research
-                    </h3>
-
-                    <p>
-                        My research interests focus on applying epidemiological
-                        methods and health data to understand disease patterns,
-                        identify determinants, evaluate surveillance systems,
-                        and support public health interventions.
-                    </p>
-
-                    <p>
-                        Particular interests include malaria epidemiology,
-                        climate-sensitive diseases, disease surveillance,
-                        temporal trends, seasonal patterns, spatial analysis,
-                        forecasting, and statistical modelling.
-                    </p>
-
-                    <p>
-                        My research uses routinely collected health data,
-                        environmental information, and epidemiological methods
-                        to generate practical evidence for public health
-                        decision-making.
-                    </p>
-
-                </div>
+                <p>
+                    My research uses routinely collected health data,
+                    environmental information, and epidemiological methods
+                    to generate practical evidence for public health
+                    decision-making.
+                </p>
 
             </div>
 
@@ -742,7 +718,9 @@
 
             <div class="section-title">
 
-                <h2>Current Research Projects</h2>
+                <h2>
+                    Current Research Projects
+                </h2>
 
                 <p>
                     Selected research projects and manuscripts at different
@@ -751,6 +729,7 @@
 
             </div>
 
+
             <div class="projects">
 
 
@@ -758,18 +737,11 @@
 
                 <article class="project-card">
 
-                    <div class="project-image">
-
-                        <img src="research.jpg"
-                            alt="Malaria and climate research">
-
+                    <div class="project-number">
+                        PROJECT 01
                     </div>
 
                     <div class="project-content">
-
-                        <div class="project-number">
-                            PROJECT 01
-                        </div>
 
                         <h3>
                             Attribution of Climate Variability to Malaria
@@ -819,18 +791,11 @@
 
                 <article class="project-card">
 
-                    <div class="project-image">
-
-                        <img src="presentation.jpg"
-                            alt="Malaria epidemiology research">
-
+                    <div class="project-number">
+                        PROJECT 02
                     </div>
 
                     <div class="project-content">
-
-                        <div class="project-number">
-                            PROJECT 02
-                        </div>
 
                         <h3>
                             Determinants of Malaria in Haramaya District,
@@ -869,6 +834,11 @@
                             24 August 2026
                         </p>
 
+                        <p>
+                            <strong>Status Date:</strong>
+                            1 September 2026
+                        </p>
+
                         <span class="status">
                             UNDER REVIEW
                         </span>
@@ -882,18 +852,11 @@
 
                 <article class="project-card">
 
-                    <div class="project-image">
-
-                        <img src="certificate.jpg"
-                            alt="Public health surveillance research">
-
+                    <div class="project-number">
+                        PROJECT 03
                     </div>
 
                     <div class="project-content">
-
-                        <div class="project-number">
-                            PROJECT 03
-                        </div>
 
                         <h3>
                             Malaria Surveillance System Evaluation and Trends
@@ -941,18 +904,11 @@
 
                 <article class="project-card">
 
-                    <div class="project-image">
-
-                        <img src="research.jpg"
-                            alt="Disease trend research">
-
+                    <div class="project-number">
+                        PROJECT 04
                     </div>
 
                     <div class="project-content">
-
-                        <div class="project-number">
-                            PROJECT 04
-                        </div>
 
                         <h3>
                             Temporal, Seasonal, and Spatial Dynamics of
@@ -1009,14 +965,17 @@
 
             <div class="section-title">
 
-                <h2>Publication History</h2>
+                <h2>
+                    Publication History
+                </h2>
 
                 <p>
                     Selected manuscripts and research outputs according to
-                    their current publication status.
+                    their current status.
                 </p>
 
             </div>
+
 
             <p class="publication-intro">
 
@@ -1025,6 +984,7 @@
                 been published are clearly identified as such.
 
             </p>
+
 
             <div class="publication-list">
 
@@ -1202,13 +1162,16 @@
 
             <div class="section-title">
 
-                <h2>Research Areas</h2>
+                <h2>
+                    Research Areas
+                </h2>
 
                 <p>
                     Key areas of epidemiological and public health research.
                 </p>
 
             </div>
+
 
             <div class="areas">
 
@@ -1267,7 +1230,9 @@
 
             <div class="section-title">
 
-                <h2>Research Methods</h2>
+                <h2>
+                    Research Methods
+                </h2>
 
                 <p>
                     Epidemiological and analytical methods used in public
@@ -1275,6 +1240,7 @@
                 </p>
 
             </div>
+
 
             <div class="methods">
 
@@ -1420,7 +1386,7 @@
     </section>
 
 
-    <!-- GALLERY -->
+    <!-- RESEARCH GALLERY -->
 
     <section class="section">
 
@@ -1428,7 +1394,9 @@
 
             <div class="section-title">
 
-                <h2>Research Gallery</h2>
+                <h2>
+                    Research Gallery
+                </h2>
 
                 <p>
                     Selected images from research, academic, and professional
@@ -1436,6 +1404,7 @@
                 </p>
 
             </div>
+
 
             <div class="gallery">
 
@@ -1450,6 +1419,7 @@
 
                 </div>
 
+
                 <div class="gallery-item">
 
                     <img src="presentation.jpg"
@@ -1460,6 +1430,7 @@
                     </div>
 
                 </div>
+
 
                 <div class="gallery-item">
 
@@ -1494,6 +1465,7 @@
                 public health research, or professional opportunities,
                 feel free to contact me.
             </p>
+
 
             <div class="contact-buttons">
 
@@ -1567,6 +1539,7 @@
         </a>
 
     </div>
+
 
 </body>
 
