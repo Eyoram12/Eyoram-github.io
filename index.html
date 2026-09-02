@@ -2,7 +2,9 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Getahun Bedada Feye | Field Epidemiology & Public Health Research</title>
@@ -11,6 +13,10 @@
         content="Professional academic portfolio of Getahun Bedada Feye, Field Epidemiology student, public health researcher, and health data analyst.">
 
     <style>
+
+        /* =========================
+           GLOBAL
+        ========================== */
 
         * {
             box-sizing: border-box;
@@ -25,8 +31,8 @@
         body {
             font-family: Arial, Helvetica, sans-serif;
             line-height: 1.7;
-            background: #f5f7fa;
-            color: #1f2937;
+            background: #f4f7fb;
+            color: #243447;
         }
 
         a {
@@ -39,6 +45,17 @@
             display: block;
         }
 
+        section {
+            padding: 85px 20px;
+            scroll-margin-top: 75px;
+        }
+
+        .section-container {
+            max-width: 1200px;
+            margin: auto;
+        }
+
+
         /* =========================
            HEADER
         ========================== */
@@ -47,79 +64,127 @@
             position: sticky;
             top: 0;
             z-index: 1000;
-            background: #ffffff;
-            border-bottom: 1px solid #e5e7eb;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+            background: rgba(255, 255, 255, 0.97);
+            border-bottom: 1px solid #e5eaf0;
+            box-shadow: 0 3px 18px rgba(0, 0, 0, 0.06);
         }
 
         .nav-container {
-            max-width: 1200px;
+            max-width: 1250px;
             margin: auto;
-            padding: 15px 20px;
+            padding: 15px 22px;
             display: flex;
             align-items: center;
             justify-content: space-between;
+            gap: 25px;
         }
 
         .logo {
             font-size: 21px;
-            font-weight: 700;
+            font-weight: 800;
             color: #123b63;
+            white-space: nowrap;
         }
 
         nav {
             display: flex;
-            gap: 20px;
+            align-items: center;
+            justify-content: flex-end;
+            gap: 18px;
             flex-wrap: wrap;
         }
 
         nav a {
-            font-size: 14px;
-            font-weight: 600;
+            font-size: 13px;
+            font-weight: 700;
             color: #374151;
+            transition: 0.25s ease;
         }
 
         nav a:hover {
             color: #1769aa;
         }
 
+
         /* =========================
            HERO
         ========================== */
 
         .hero {
-            background: linear-gradient(135deg, #123b63, #1769aa);
+            background:
+                linear-gradient(135deg, #0d3557 0%, #145b8d 55%, #1769aa 100%);
             color: white;
-            padding: 80px 20px;
+            padding: 95px 20px 110px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: "";
+            position: absolute;
+            width: 420px;
+            height: 420px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.05);
+            top: -180px;
+            right: -120px;
+        }
+
+        .hero::after {
+            content: "";
+            position: absolute;
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.04);
+            bottom: -150px;
+            left: -100px;
         }
 
         .hero-container {
             max-width: 1200px;
             margin: auto;
             display: grid;
-            grid-template-columns: 1fr 280px;
-            gap: 50px;
+            grid-template-columns: 1fr 320px;
+            gap: 70px;
             align-items: center;
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero-label {
+            display: inline-block;
+            padding: 7px 15px;
+            border: 1px solid rgba(255,255,255,0.35);
+            background: rgba(255,255,255,0.10);
+            border-radius: 30px;
+            font-size: 12px;
+            font-weight: 800;
+            letter-spacing: 1px;
+            margin-bottom: 20px;
         }
 
         .hero h1 {
-            font-size: 48px;
-            line-height: 1.15;
-            margin-bottom: 15px;
+            font-size: 52px;
+            line-height: 1.12;
+            margin-bottom: 18px;
+            letter-spacing: -1px;
         }
 
         .hero h2 {
-            font-size: 23px;
+            font-size: 22px;
+            line-height: 1.5;
             font-weight: 500;
-            margin-bottom: 20px;
-            color: #e7f3ff;
+            color: #dceeff;
+            margin-bottom: 22px;
         }
 
         .hero p {
-            max-width: 750px;
+            max-width: 760px;
             font-size: 17px;
-            color: #eef7ff;
-            margin-bottom: 28px;
+            line-height: 1.8;
+            color: #eef8ff;
+            margin-bottom: 30px;
         }
 
         .hero-buttons {
@@ -130,11 +195,15 @@
 
         .btn {
             display: inline-block;
-            padding: 12px 20px;
-            border-radius: 7px;
+            padding: 13px 21px;
+            border-radius: 8px;
             font-weight: 700;
             font-size: 14px;
-            transition: 0.2s;
+            transition: 0.25s ease;
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
         }
 
         .btn-primary {
@@ -143,159 +212,245 @@
         }
 
         .btn-secondary {
-            border: 1px solid white;
+            border: 1px solid rgba(255,255,255,0.8);
             color: white;
+            background: transparent;
         }
 
-        .btn:hover {
-            transform: translateY(-2px);
-            opacity: 0.92;
+        .btn-secondary:hover {
+            background: white;
+            color: #123b63;
         }
 
         .profile-box {
             text-align: center;
         }
 
-        .profile-box img {
-            width: 240px;
-            height: 240px;
-            object-fit: cover;
-            border-radius: 50%;
-            border: 6px solid rgba(255, 255, 255, 0.85);
+        .profile-frame {
+            width: 285px;
+            height: 285px;
             margin: auto;
+            padding: 8px;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.18);
+            box-shadow: 0 15px 45px rgba(0,0,0,0.20);
         }
 
+        .profile-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 5px solid white;
+        }
+
+
         /* =========================
-           QUICK INFO
+           QUICK INFORMATION
         ========================== */
 
         .quick-info {
             max-width: 1200px;
-            margin: -35px auto 0;
+            margin: -42px auto 0;
             padding: 0 20px;
             position: relative;
-            z-index: 5;
+            z-index: 10;
         }
 
         .quick-grid {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
-            gap: 15px;
+            gap: 16px;
         }
 
         .quick-card {
             background: white;
-            padding: 22px;
-            border-radius: 10px;
+            padding: 23px 18px;
+            border-radius: 12px;
             text-align: center;
-            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+            box-shadow: 0 8px 28px rgba(0,0,0,0.09);
+            border: 1px solid #edf1f5;
+            transition: 0.25s ease;
+        }
+
+        .quick-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .quick-icon {
+            width: 42px;
+            height: 42px;
+            margin: 0 auto 12px;
+            border-radius: 50%;
+            background: #eaf4fb;
+            color: #1769aa;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 16px;
+            font-weight: 800;
         }
 
         .quick-card strong {
             display: block;
             color: #123b63;
             margin-bottom: 5px;
+            font-size: 15px;
         }
 
         .quick-card span {
-            font-size: 13px;
+            font-size: 12px;
             color: #6b7280;
         }
 
+
         /* =========================
-           GENERAL SECTIONS
+           SECTION TITLES
         ========================== */
-
-        section {
-            padding: 75px 20px;
-        }
-
-        .section-container {
-            max-width: 1200px;
-            margin: auto;
-        }
 
         .section-title {
             text-align: center;
-            margin-bottom: 45px;
+            margin-bottom: 48px;
+        }
+
+        .section-label {
+            display: inline-block;
+            color: #1769aa;
+            font-size: 12px;
+            font-weight: 800;
+            letter-spacing: 1.5px;
+            margin-bottom: 8px;
+            text-transform: uppercase;
         }
 
         .section-title h2 {
             color: #123b63;
-            font-size: 32px;
-            margin-bottom: 10px;
+            font-size: 34px;
+            line-height: 1.3;
+            margin-bottom: 11px;
         }
 
         .section-title p {
-            color: #6b7280;
-            max-width: 750px;
+            max-width: 760px;
             margin: auto;
+            color: #6b7280;
+            font-size: 15px;
         }
+
 
         /* =========================
            ABOUT
         ========================== */
 
+        #about {
+            background: white;
+        }
+
         .about-grid {
             display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 30px;
+            grid-template-columns: 1.2fr 0.8fr;
+            gap: 28px;
         }
 
         .card {
-            background: white;
-            padding: 28px;
-            border-radius: 12px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+            background: #f8fafc;
+            padding: 32px;
+            border-radius: 14px;
+            border: 1px solid #e7edf3;
         }
 
         .card h3 {
             color: #123b63;
-            margin-bottom: 15px;
+            font-size: 21px;
+            margin-bottom: 17px;
         }
 
         .card p {
             color: #4b5563;
-            margin-bottom: 12px;
+            margin-bottom: 14px;
+            font-size: 15px;
         }
 
+        .interest-list {
+            list-style: none;
+        }
+
+        .interest-list li {
+            padding: 10px 0;
+            border-bottom: 1px solid #e1e8ef;
+            color: #4b5563;
+            font-size: 14px;
+        }
+
+        .interest-list li:last-child {
+            border-bottom: none;
+        }
+
+        .interest-list li::before {
+            content: "✓";
+            color: #1769aa;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+
         /* =========================
-           EXPERIENCE / EDUCATION
+           EXPERIENCE AND EDUCATION
         ========================== */
 
         .timeline {
-            max-width: 900px;
+            max-width: 950px;
             margin: auto;
         }
 
         .timeline-item {
             background: white;
-            padding: 25px;
+            padding: 27px 30px;
             margin-bottom: 20px;
             border-left: 5px solid #1769aa;
-            border-radius: 8px;
-            box-shadow: 0 3px 12px rgba(0, 0, 0, 0.05);
+            border-radius: 10px;
+            box-shadow: 0 4px 17px rgba(0,0,0,0.06);
+            position: relative;
+        }
+
+        .timeline-item::before {
+            content: "";
+            position: absolute;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: #1769aa;
+            left: -9px;
+            top: 31px;
+            border: 3px solid #f4f7fb;
         }
 
         .timeline-item h3 {
             color: #123b63;
-            margin-bottom: 6px;
+            font-size: 19px;
+            margin-bottom: 5px;
         }
 
         .timeline-item .date {
             color: #1769aa;
-            font-weight: 700;
-            font-size: 14px;
+            font-weight: 800;
+            font-size: 13px;
             margin-bottom: 8px;
         }
 
         .timeline-item p {
-            color: #4b5563;
+            color: #5b6470;
+            font-size: 14px;
         }
+
 
         /* =========================
            RESEARCH DASHBOARD
         ========================== */
+
+        #research {
+            background: #f4f7fb;
+        }
 
         .research-grid {
             display: grid;
@@ -305,141 +460,243 @@
 
         .research-card {
             background: white;
-            padding: 25px;
-            border-radius: 12px;
+            padding: 27px;
+            border-radius: 13px;
             border-top: 4px solid #1769aa;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
-            transition: 0.2s;
+            box-shadow: 0 5px 18px rgba(0,0,0,0.06);
+            transition: 0.25s ease;
         }
 
         .research-card:hover {
-            transform: translateY(-4px);
+            transform: translateY(-6px);
+            box-shadow: 0 12px 28px rgba(0,0,0,0.10);
         }
 
         .research-number {
-            font-size: 13px;
-            font-weight: 700;
             color: #1769aa;
+            font-size: 11px;
+            font-weight: 800;
+            letter-spacing: 1px;
             margin-bottom: 10px;
         }
 
         .research-card h3 {
             color: #123b63;
             font-size: 18px;
-            margin-bottom: 10px;
+            line-height: 1.4;
+            margin-bottom: 11px;
         }
 
         .research-card p {
             color: #6b7280;
-            font-size: 14px;
+            font-size: 13px;
+            line-height: 1.7;
         }
+
+        .research-link {
+            margin-top: 15px;
+            display: inline-block;
+            color: #1769aa;
+            font-size: 13px;
+            font-weight: 800;
+        }
+
 
         /* =========================
            PROJECTS
         ========================== */
 
+        #projects {
+            background: white;
+        }
+
         .project-grid {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            gap: 22px;
+            gap: 24px;
         }
 
         .project-card {
-            background: white;
-            padding: 28px;
-            border-radius: 12px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+            background: #f8fafc;
+            padding: 30px;
+            border-radius: 14px;
+            border: 1px solid #e5ebf1;
+            position: relative;
+            transition: 0.25s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+        }
+
+        .project-tag {
+            display: inline-block;
+            padding: 5px 10px;
+            border-radius: 20px;
+            background: #eaf4fb;
+            color: #1769aa;
+            font-size: 11px;
+            font-weight: 800;
+            margin-bottom: 13px;
         }
 
         .project-card h3 {
             color: #123b63;
+            font-size: 20px;
+            line-height: 1.45;
             margin-bottom: 12px;
         }
 
         .project-card p {
             color: #5b6470;
+            font-size: 14px;
         }
+
+        .project-button {
+            display: inline-block;
+            margin-top: 18px;
+            color: #1769aa;
+            font-size: 13px;
+            font-weight: 800;
+        }
+
 
         /* =========================
            METHODS
         ========================== */
 
+        #methods {
+            background: #f4f7fb;
+        }
+
         .skills-grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
-            gap: 15px;
+            gap: 17px;
         }
 
         .skill {
             background: white;
-            padding: 20px;
+            padding: 21px;
             text-align: center;
-            border-radius: 9px;
-            font-weight: 600;
+            border-radius: 10px;
+            font-weight: 700;
             color: #123b63;
-            box-shadow: 0 3px 12px rgba(0, 0, 0, 0.05);
+            border: 1px solid #e4ebf1;
+            box-shadow: 0 3px 12px rgba(0,0,0,0.04);
+            transition: 0.25s ease;
         }
+
+        .skill:hover {
+            transform: translateY(-4px);
+            border-color: #1769aa;
+        }
+
 
         /* =========================
            PUBLICATIONS
         ========================== */
 
-        .publication {
+        #publications {
             background: white;
-            padding: 25px;
-            margin-bottom: 18px;
-            border-radius: 10px;
-            border-left: 4px solid #1769aa;
-            box-shadow: 0 3px 12px rgba(0, 0, 0, 0.05);
+        }
+
+        .publication {
+            max-width: 950px;
+            margin: 0 auto 20px;
+            background: #f8fafc;
+            padding: 27px 30px;
+            border-radius: 11px;
+            border-left: 5px solid #1769aa;
+            box-shadow: 0 4px 14px rgba(0,0,0,0.05);
         }
 
         .publication h3 {
             color: #123b63;
+            font-size: 18px;
             margin-bottom: 8px;
         }
 
         .publication p {
             color: #6b7280;
+            font-size: 14px;
         }
 
         .status {
             display: inline-block;
-            margin-top: 10px;
-            padding: 5px 10px;
-            background: #eef6ff;
+            margin-top: 12px;
+            padding: 5px 11px;
+            background: #eaf4fb;
             color: #1769aa;
             border-radius: 20px;
-            font-size: 12px;
-            font-weight: 700;
+            font-size: 11px;
+            font-weight: 800;
         }
+
+
+        /* =========================
+           TECHNICAL SKILLS
+        ========================== */
+
+        #skills {
+            background: #f4f7fb;
+        }
+
 
         /* =========================
            CV
         ========================== */
 
+        #cv {
+            background: white;
+        }
+
         .cv-box {
-            max-width: 800px;
+            max-width: 850px;
             margin: auto;
             text-align: center;
-            background: white;
-            padding: 40px 25px;
-            border-radius: 12px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+            background: linear-gradient(135deg, #123b63, #1769aa);
+            color: white;
+            padding: 48px 30px;
+            border-radius: 16px;
+            box-shadow: 0 12px 35px rgba(18,59,99,0.18);
         }
 
         .cv-box h3 {
-            color: #123b63;
+            font-size: 27px;
             margin-bottom: 12px;
         }
 
         .cv-box p {
-            color: #6b7280;
-            margin-bottom: 25px;
+            color: #e7f3ff;
+            margin-bottom: 27px;
+            font-size: 15px;
         }
+
+        .cv-button {
+            display: inline-block;
+            background: white;
+            color: #123b63;
+            padding: 13px 25px;
+            border-radius: 8px;
+            font-weight: 800;
+            font-size: 14px;
+            transition: 0.25s ease;
+        }
+
+        .cv-button:hover {
+            transform: translateY(-3px);
+        }
+
 
         /* =========================
            GALLERY
         ========================== */
+
+        #gallery {
+            background: #f4f7fb;
+        }
 
         .gallery-grid {
             display: grid;
@@ -447,17 +704,42 @@
             gap: 18px;
         }
 
-        .gallery-grid img {
-            width: 100%;
-            height: 220px;
-            object-fit: cover;
-            border-radius: 10px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        .gallery-item {
+            background: white;
+            padding: 8px;
+            border-radius: 13px;
+            box-shadow: 0 5px 18px rgba(0,0,0,0.07);
+            overflow: hidden;
         }
 
+        .gallery-item img {
+            width: 100%;
+            height: 245px;
+            object-fit: cover;
+            border-radius: 8px;
+            transition: 0.3s ease;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.03);
+        }
+
+        .gallery-caption {
+            padding: 12px 8px 8px;
+            color: #123b63;
+            font-size: 13px;
+            font-weight: 700;
+            text-align: center;
+        }
+
+
         /* =========================
-           PROFILES
+           PROFESSIONAL PROFILES
         ========================== */
+
+        #profiles {
+            background: white;
+        }
 
         .profile-links {
             display: flex;
@@ -467,47 +749,65 @@
         }
 
         .profile-link {
-            background: white;
-            padding: 15px 22px;
-            border-radius: 8px;
-            font-weight: 700;
+            background: #f7fafc;
+            border: 1px solid #e3eaf0;
+            padding: 15px 24px;
+            border-radius: 9px;
+            font-weight: 800;
             color: #123b63;
-            box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06);
+            transition: 0.25s ease;
         }
 
         .profile-link:hover {
-            background: #eef6ff;
+            background: #eaf4fb;
+            border-color: #1769aa;
+            transform: translateY(-3px);
         }
+
 
         /* =========================
            CONTACT
         ========================== */
 
+        #contact {
+            background: #f4f7fb;
+        }
+
         .contact-container {
-            max-width: 750px;
+            max-width: 780px;
             margin: auto;
         }
 
         form {
             background: white;
-            padding: 30px;
-            border-radius: 12px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+            padding: 35px;
+            border-radius: 14px;
+            box-shadow: 0 6px 22px rgba(0,0,0,0.07);
+        }
+
+        .form-group {
+            margin-bottom: 15px;
         }
 
         input,
         textarea {
             width: 100%;
-            padding: 13px;
-            margin-bottom: 15px;
-            border: 1px solid #d1d5db;
-            border-radius: 7px;
+            padding: 14px;
+            border: 1px solid #d3dbe3;
+            border-radius: 8px;
             font-family: inherit;
             font-size: 14px;
+            outline: none;
+            transition: 0.2s;
+        }
+
+        input:focus,
+        textarea:focus {
+            border-color: #1769aa;
         }
 
         textarea {
-            min-height: 150px;
+            min-height: 160px;
             resize: vertical;
         }
 
@@ -516,30 +816,40 @@
             cursor: pointer;
             background: #123b63;
             color: white;
-            padding: 13px 24px;
-            border-radius: 7px;
-            font-weight: 700;
+            padding: 13px 25px;
+            border-radius: 8px;
+            font-weight: 800;
+            font-size: 14px;
+            transition: 0.25s ease;
         }
 
         button:hover {
             background: #1769aa;
+            transform: translateY(-2px);
         }
+
 
         /* =========================
            FOOTER
         ========================== */
 
         footer {
-            background: #123b63;
+            background: #0d3557;
             color: white;
             text-align: center;
-            padding: 30px 20px 90px;
+            padding: 35px 20px 100px;
         }
 
         footer p {
-            font-size: 14px;
+            font-size: 13px;
             color: #dbeafe;
+            margin-bottom: 7px;
         }
+
+        footer a {
+            color: #9ed8ff;
+        }
+
 
         /* =========================
            MOBILE NAVIGATION
@@ -549,27 +859,25 @@
             display: none;
         }
 
+
         /* =========================
-           RESPONSIVE
+           RESPONSIVE TABLET
         ========================== */
 
-        @media (max-width: 900px) {
-
-            nav {
-                display: none;
-            }
+        @media (max-width: 1000px) {
 
             .hero-container {
-                grid-template-columns: 1fr;
-                text-align: center;
+                grid-template-columns: 1fr 250px;
+                gap: 35px;
             }
 
             .hero h1 {
-                font-size: 38px;
+                font-size: 42px;
             }
 
-            .hero-buttons {
-                justify-content: center;
+            .profile-frame {
+                width: 235px;
+                height: 235px;
             }
 
             .quick-grid {
@@ -584,57 +892,102 @@
                 grid-template-columns: repeat(2, 1fr);
             }
 
-            .skills-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-
-            .about-grid {
-                grid-template-columns: 1fr;
-            }
-
         }
 
-        @media (max-width: 600px) {
+
+        /* =========================
+           RESPONSIVE MOBILE
+        ========================== */
+
+        @media (max-width: 750px) {
+
+            header {
+                position: sticky;
+            }
 
             .nav-container {
-                padding: 13px 16px;
+                justify-content: center;
+                padding: 14px 16px;
             }
 
             .logo {
-                font-size: 18px;
+                font-size: 19px;
+            }
+
+            nav {
+                display: none;
             }
 
             .hero {
-                padding: 55px 18px;
+                padding: 65px 18px 85px;
+            }
+
+            .hero-container {
+                grid-template-columns: 1fr;
+                text-align: center;
+                gap: 35px;
             }
 
             .hero h1 {
-                font-size: 32px;
+                font-size: 35px;
+                letter-spacing: -0.5px;
             }
 
             .hero h2 {
-                font-size: 19px;
+                font-size: 18px;
             }
 
             .hero p {
                 font-size: 15px;
+                margin-left: auto;
+                margin-right: auto;
             }
 
-            .profile-box img {
-                width: 190px;
-                height: 190px;
+            .hero-buttons {
+                justify-content: center;
+            }
+
+            .profile-frame {
+                width: 210px;
+                height: 210px;
+            }
+
+            .quick-info {
+                margin-top: -30px;
+                padding: 0 15px;
+            }
+
+            .quick-grid {
+                grid-template-columns: 1fr 1fr;
+                gap: 10px;
+            }
+
+            .quick-card {
+                padding: 18px 10px;
+            }
+
+            .quick-card strong {
+                font-size: 13px;
+            }
+
+            .quick-card span {
+                font-size: 11px;
             }
 
             section {
-                padding: 55px 18px;
+                padding: 60px 17px;
+            }
+
+            .section-title {
+                margin-bottom: 35px;
             }
 
             .section-title h2 {
                 font-size: 27px;
             }
 
-            .quick-grid {
-                grid-template-columns: 1fr 1fr;
+            .about-grid {
+                grid-template-columns: 1fr;
             }
 
             .research-grid {
@@ -651,73 +1004,144 @@
 
             .gallery-grid {
                 grid-template-columns: 1fr 1fr;
+                gap: 10px;
             }
 
-            .gallery-grid img {
-                height: 160px;
+            .gallery-item img {
+                height: 170px;
+            }
+
+            .timeline-item {
+                padding: 23px 22px;
+            }
+
+            .cv-box {
+                padding: 35px 22px;
+            }
+
+            .cv-box h3 {
+                font-size: 23px;
+            }
+
+            form {
+                padding: 25px 20px;
             }
 
             .mobile-nav {
                 position: fixed;
+                display: flex;
                 bottom: 0;
                 left: 0;
                 right: 0;
                 z-index: 2000;
-                display: flex;
                 justify-content: space-around;
                 background: white;
-                border-top: 1px solid #ddd;
-                box-shadow: 0 -3px 15px rgba(0, 0, 0, 0.08);
-                padding: 9px 4px;
+                border-top: 1px solid #dfe5ea;
+                box-shadow: 0 -4px 18px rgba(0,0,0,0.10);
+                padding: 8px 4px;
             }
 
             .mobile-nav a {
-                font-size: 11px;
+                min-width: 55px;
                 text-align: center;
                 color: #374151;
-                font-weight: 600;
+                font-size: 10px;
+                font-weight: 700;
             }
 
             .mobile-nav span {
                 display: block;
-                font-size: 18px;
-                margin-bottom: 2px;
+                font-size: 17px;
+                margin-bottom: 1px;
+                color: #1769aa;
             }
 
             footer {
                 padding-bottom: 90px;
             }
+
+        }
+
+
+        /* =========================
+           SMALL PHONES
+        ========================== */
+
+        @media (max-width: 400px) {
+
+            .hero h1 {
+                font-size: 30px;
+            }
+
+            .hero h2 {
+                font-size: 16px;
+            }
+
+            .hero-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .hero-buttons .btn {
+                width: 100%;
+                max-width: 280px;
+                text-align: center;
+            }
+
+            .gallery-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .gallery-item img {
+                height: 230px;
+            }
+
         }
 
     </style>
+
 </head>
 
+
 <body>
+
 
     <!-- =========================
          HEADER
     ========================== -->
 
     <header>
+
         <div class="nav-container">
 
-            <div class="logo">
+            <a href="#home" class="logo">
                 Getahun B.
-            </div>
+            </a>
 
             <nav>
+
                 <a href="#home">Home</a>
+
                 <a href="#about">About</a>
+
                 <a href="#experience">Experience</a>
+
                 <a href="#education">Education</a>
+
                 <a href="#research">Research</a>
+
                 <a href="#projects">Projects</a>
+
                 <a href="#publications">Publications</a>
+
                 <a href="#cv">CV</a>
+
                 <a href="#contact">Contact</a>
+
             </nav>
 
         </div>
+
     </header>
 
 
@@ -731,6 +1155,10 @@
 
             <div>
 
+                <span class="hero-label">
+                    FIELD EPIDEMIOLOGY & PUBLIC HEALTH
+                </span>
+
                 <h1>
                     Getahun Bedada Feye
                 </h1>
@@ -740,20 +1168,21 @@
                 </h2>
 
                 <p>
-                    Field Epidemiology student and public health professional with
-                    interests in epidemiological research, disease surveillance,
-                    health data analysis, malaria epidemiology, climate and health,
-                    and evidence-based public health practice.
+                    Field Epidemiology student and public health professional
+                    with interests in epidemiological research, disease
+                    surveillance, health data analysis, malaria epidemiology,
+                    climate and health, and evidence-based public health practice.
                 </p>
 
                 <div class="hero-buttons">
 
-                    <a href="#research" class="btn btn-primary">
+                    <a href="research.html" class="btn btn-primary">
                         View My Research
                     </a>
 
-                    <a href="https://eyoram12.github.io/Eyoram-github.io/Getahun_Bedada_Feye_CV.pdf"
-                        class="btn btn-secondary" target="_blank">
+                    <a href="Getahun_Bedada_Feye_CV.pdf"
+                        class="btn btn-secondary"
+                        target="_blank">
                         Download CV
                     </a>
 
@@ -768,8 +1197,12 @@
 
             <div class="profile-box">
 
-                <img src="https://eyoram12.github.io/Eyoram-github.io/profile.jpg"
-                    alt="Getahun Bedada Feye">
+                <div class="profile-frame">
+
+                    <img src="profile.jpg"
+                        alt="Getahun Bedada Feye">
+
+                </div>
 
             </div>
 
@@ -787,23 +1220,70 @@
         <div class="quick-grid">
 
             <div class="quick-card">
-                <strong>Field Epidemiology</strong>
-                <span>Current academic focus</span>
+
+                <div class="quick-icon">
+                    FE
+                </div>
+
+                <strong>
+                    Field Epidemiology
+                </strong>
+
+                <span>
+                    Current academic focus
+                </span>
+
             </div>
 
-            <div class="quick-card">
-                <strong>Public Health</strong>
-                <span>Research and practice</span>
-            </div>
 
             <div class="quick-card">
-                <strong>Health Data</strong>
-                <span>Analysis and interpretation</span>
+
+                <div class="quick-icon">
+                    PH
+                </div>
+
+                <strong>
+                    Public Health
+                </strong>
+
+                <span>
+                    Research and practice
+                </span>
+
             </div>
 
+
             <div class="quick-card">
-                <strong>Disease Surveillance</strong>
-                <span>Monitoring and evaluation</span>
+
+                <div class="quick-icon">
+                    HD
+                </div>
+
+                <strong>
+                    Health Data
+                </strong>
+
+                <span>
+                    Analysis and interpretation
+                </span>
+
+            </div>
+
+
+            <div class="quick-card">
+
+                <div class="quick-icon">
+                    DS
+                </div>
+
+                <strong>
+                    Disease Surveillance
+                </strong>
+
+                <span>
+                    Monitoring and evaluation
+                </span>
+
             </div>
 
         </div>
@@ -821,11 +1301,18 @@
 
             <div class="section-title">
 
-                <h2>About Me</h2>
+                <span class="section-label">
+                    About
+                </span>
+
+                <h2>
+                    About Me
+                </h2>
 
                 <p>
                     A public health professional developing expertise in
-                    field epidemiology, research, surveillance, and health data analysis.
+                    field epidemiology, research, surveillance, and health
+                    data analysis.
                 </p>
 
             </div>
@@ -835,19 +1322,23 @@
 
                 <div class="card">
 
-                    <h3>Professional Profile</h3>
+                    <h3>
+                        Professional Profile
+                    </h3>
 
                     <p>
-                        I am currently studying Field Epidemiology at Haramaya University.
-                        My professional interests focus on applying epidemiological
-                        methods and health data to understand disease patterns and
-                        support evidence-based public health decisions.
+                        I am currently studying Field Epidemiology at
+                        Haramaya University. My professional interests focus
+                        on applying epidemiological methods and health data
+                        to understand disease patterns and support
+                        evidence-based public health decisions.
                     </p>
 
                     <p>
-                        My areas of interest include disease surveillance, malaria
-                        epidemiology, climate and health, epidemiological research,
-                        time-series analysis, forecasting, and health data analysis.
+                        My areas of interest include disease surveillance,
+                        malaria epidemiology, climate and health,
+                        epidemiological research, time-series analysis,
+                        forecasting, and health data analysis.
                     </p>
 
                 </div>
@@ -855,31 +1346,37 @@
 
                 <div class="card">
 
-                    <h3>Research Interests</h3>
+                    <h3>
+                        Research Interests
+                    </h3>
 
-                    <p>
-                        • Field Epidemiology
-                    </p>
+                    <ul class="interest-list">
 
-                    <p>
-                        • Malaria Epidemiology
-                    </p>
+                        <li>
+                            Field Epidemiology
+                        </li>
 
-                    <p>
-                        • Climate Variables and Health
-                    </p>
+                        <li>
+                            Malaria Epidemiology
+                        </li>
 
-                    <p>
-                        • Disease Surveillance
-                    </p>
+                        <li>
+                            Climate Variables and Health
+                        </li>
 
-                    <p>
-                        • Health Data Analysis
-                    </p>
+                        <li>
+                            Disease Surveillance
+                        </li>
 
-                    <p>
-                        • Epidemiological Research Methods
-                    </p>
+                        <li>
+                            Health Data Analysis
+                        </li>
+
+                        <li>
+                            Epidemiological Research Methods
+                        </li>
+
+                    </ul>
 
                 </div>
 
@@ -900,11 +1397,18 @@
 
             <div class="section-title">
 
-                <h2>Professional Experience</h2>
+                <span class="section-label">
+                    Career
+                </span>
+
+                <h2>
+                    Professional Experience
+                </h2>
 
                 <p>
                     Professional experience in public health service,
-                    disease prevention, surveillance, and health program coordination.
+                    disease prevention, surveillance, and health program
+                    coordination.
                 </p>
 
             </div>
@@ -914,7 +1418,9 @@
 
                 <div class="timeline-item">
 
-                    <h3>Disease Prevention and Control Coordinator</h3>
+                    <h3>
+                        Disease Prevention and Control Coordinator
+                    </h3>
 
                     <div class="date">
                         Jan 2022 – Sep 2024
@@ -930,7 +1436,9 @@
 
                 <div class="timeline-item">
 
-                    <h3>Primary Health Care Unit Director</h3>
+                    <h3>
+                        Primary Health Care Unit Director
+                    </h3>
 
                     <div class="date">
                         Jun 2021 – Jan 2022
@@ -945,7 +1453,9 @@
 
                 <div class="timeline-item">
 
-                    <h3>Adult OPD and PHEM Focal Person</h3>
+                    <h3>
+                        Adult OPD and PHEM Focal Person
+                    </h3>
 
                     <div class="date">
                         Apr 2018 – May 2020
@@ -974,7 +1484,13 @@
 
             <div class="section-title">
 
-                <h2>Education</h2>
+                <span class="section-label">
+                    Academic Background
+                </span>
+
+                <h2>
+                    Education
+                </h2>
 
                 <p>
                     Academic background in public health and field epidemiology.
@@ -987,7 +1503,9 @@
 
                 <div class="timeline-item">
 
-                    <h3>Field Epidemiology</h3>
+                    <h3>
+                        Field Epidemiology
+                    </h3>
 
                     <div class="date">
                         Current
@@ -1002,7 +1520,9 @@
 
                 <div class="timeline-item">
 
-                    <h3>BSc in Public Health</h3>
+                    <h3>
+                        BSc in Public Health
+                    </h3>
 
                     <div class="date">
                         2006 – 2008
@@ -1017,7 +1537,9 @@
 
                 <div class="timeline-item">
 
-                    <h3>Preparatory Education</h3>
+                    <h3>
+                        Preparatory Education
+                    </h3>
 
                     <div class="date">
                         2004 – 2005
@@ -1032,7 +1554,9 @@
 
                 <div class="timeline-item">
 
-                    <h3>High School Education</h3>
+                    <h3>
+                        High School Education
+                    </h3>
 
                     <div class="date">
                         2002 – 2003
@@ -1047,7 +1571,9 @@
 
                 <div class="timeline-item">
 
-                    <h3>Primary Education</h3>
+                    <h3>
+                        Primary Education
+                    </h3>
 
                     <div class="date">
                         1994 – 2001
@@ -1076,7 +1602,13 @@
 
             <div class="section-title">
 
-                <h2>Research Dashboard</h2>
+                <span class="section-label">
+                    Research
+                </span>
+
+                <h2>
+                    Research Dashboard
+                </h2>
 
                 <p>
                     Key areas of academic and professional research interest.
@@ -1116,8 +1648,8 @@
                     </h3>
 
                     <p>
-                        Malaria trends, determinants, epidemiological patterns,
-                        and public health interventions.
+                        Malaria trends, determinants, epidemiological
+                        patterns, and public health interventions.
                     </p>
 
                 </div>
@@ -1134,8 +1666,8 @@
                     </h3>
 
                     <p>
-                        Assessment of relationships between climate variables
-                        and infectious disease patterns.
+                        Assessment of relationships between climate
+                        variables and infectious disease patterns.
                     </p>
 
                 </div>
@@ -1166,12 +1698,12 @@
                     </div>
 
                     <h3>
-                        Retrospective Time-Series & Forecasting
+                        Time-Series & Forecasting
                     </h3>
 
                     <p>
-                        Analysis of historical health data, temporal patterns,
-                        seasonality, lag effects, and forecasting models.
+                        Analysis of historical health data, temporal
+                        patterns, seasonality, lag effects, and forecasting models.
                     </p>
 
                 </div>
@@ -1228,6 +1760,10 @@
                         disease trends, and epidemiological forecasting.
                     </p>
 
+                    <a href="research.html" class="research-link">
+                        View Research Portfolio →
+                    </a>
+
                 </div>
 
             </div>
@@ -1247,10 +1783,16 @@
 
             <div class="section-title">
 
-                <h2>Current Research Projects</h2>
+                <span class="section-label">
+                    Current Work
+                </span>
+
+                <h2>
+                    Current Research Projects
+                </h2>
 
                 <p>
-                    Selected research themes and ongoing areas of investigation.
+                    Selected research projects and ongoing areas of investigation.
                 </p>
 
             </div>
@@ -1260,56 +1802,95 @@
 
                 <div class="project-card">
 
+                    <span class="project-tag">
+                        MALARIA
+                    </span>
+
                     <h3>
-                        Malaria Epidemiology
+                        Attribution of Climate Variability to Malaria
+                        Incidence and Forecasting
                     </h3>
 
                     <p>
-                        Investigation of malaria patterns and epidemiological
-                        characteristics using routinely collected health data.
+                        Assessment of the relationship between climate
+                        variables and malaria incidence, including lag
+                        effects and forecasting for public health planning
+                        in East Hararghe Zone, Oromia Region, Ethiopia.
                     </p>
+
+                    <a href="research.html" class="project-button">
+                        View Project Details →
+                    </a>
 
                 </div>
 
 
                 <div class="project-card">
 
+                    <span class="project-tag">
+                        EPIDEMIOLOGY
+                    </span>
+
                     <h3>
-                        Climate Variables and Malaria
+                        Determinants of Malaria in Haramaya District
                     </h3>
 
                     <p>
-                        Assessment of the relationship between climate variability,
-                        malaria incidence, and possible lag effects.
+                        Research focused on identifying factors associated
+                        with malaria in Haramaya District, Oromia Region,
+                        Eastern Ethiopia.
                     </p>
+
+                    <a href="research.html" class="project-button">
+                        View Project Details →
+                    </a>
 
                 </div>
 
 
                 <div class="project-card">
 
+                    <span class="project-tag">
+                        SURVEILLANCE
+                    </span>
+
                     <h3>
-                        Disease Trends and Seasonal Patterns
+                        Malaria Surveillance System Evaluation
+                    </h3>
+
+                    <p>
+                        Evaluation of the malaria surveillance system and
+                        analysis of malaria trends using surveillance data
+                        from Kombolcha District, East Hararghe Zone.
+                    </p>
+
+                    <a href="research.html" class="project-button">
+                        View Project Details →
+                    </a>
+
+                </div>
+
+
+                <div class="project-card">
+
+                    <span class="project-tag">
+                        DISEASE TRENDS
+                    </span>
+
+                    <h3>
+                        Temporal, Seasonal, and Spatial Dynamics of
+                        Priority Diseases
                     </h3>
 
                     <p>
                         Analysis of temporal trends, seasonal patterns,
-                        and spatial distribution of priority diseases.
+                        and spatial distribution of priority diseases
+                        in East Bale Zone, Oromia Region.
                     </p>
 
-                </div>
-
-
-                <div class="project-card">
-
-                    <h3>
-                        Retrospective Time-Series & Forecasting
-                    </h3>
-
-                    <p>
-                        Development and evaluation of models for understanding
-                        historical disease patterns and forecasting future trends.
-                    </p>
+                    <a href="research.html" class="project-button">
+                        View Project Details →
+                    </a>
 
                 </div>
 
@@ -1330,10 +1911,17 @@
 
             <div class="section-title">
 
-                <h2>Research Methods</h2>
+                <span class="section-label">
+                    Methodology
+                </span>
+
+                <h2>
+                    Research Methods
+                </h2>
 
                 <p>
-                    Methods and analytical approaches used in epidemiological research.
+                    Methods and analytical approaches used in epidemiological
+                    and public health research.
                 </p>
 
             </div>
@@ -1365,6 +1953,18 @@
                     Spatial Analysis
                 </div>
 
+                <div class="skill">
+                    Seasonal Analysis
+                </div>
+
+                <div class="skill">
+                    Lag-Effect Analysis
+                </div>
+
+                <div class="skill">
+                    Disease Surveillance Evaluation
+                </div>
+
             </div>
 
         </div>
@@ -1382,7 +1982,13 @@
 
             <div class="section-title">
 
-                <h2>Publications & Research Work</h2>
+                <span class="section-label">
+                    Academic Work
+                </span>
+
+                <h2>
+                    Publications & Research Work
+                </h2>
 
                 <p>
                     Selected research topics and academic work.
@@ -1417,7 +2023,8 @@
 
                 <p>
                     Investigation of climate variability and its relationship
-                    with malaria incidence using epidemiological and statistical approaches.
+                    with malaria incidence using epidemiological and
+                    statistical approaches.
                 </p>
 
                 <span class="status">
@@ -1459,7 +2066,13 @@
 
             <div class="section-title">
 
-                <h2>Technical Skills</h2>
+                <span class="section-label">
+                    Professional Skills
+                </span>
+
+                <h2>
+                    Technical Skills
+                </h2>
 
                 <p>
                     Statistical, analytical, research, and public health skills.
@@ -1535,7 +2148,13 @@
 
             <div class="section-title">
 
-                <h2>Curriculum Vitae</h2>
+                <span class="section-label">
+                    Curriculum Vitae
+                </span>
+
+                <h2>
+                    Professional CV
+                </h2>
 
                 <p>
                     Download my current academic and professional CV.
@@ -1555,10 +2174,12 @@
                     Disease Surveillance | Health Data Analysis
                 </p>
 
-                <a href="https://eyoram12.github.io/Eyoram-github.io/Getahun_Bedada_Feye_CV.pdf"
-                    class="btn btn-primary" target="_blank"
-                    style="background:#123b63;color:white;">
+                <a href="Getahun_Bedada_Feye_CV.pdf"
+                    class="cv-button"
+                    target="_blank">
+
                     Download My CV
+
                 </a>
 
             </div>
@@ -1578,7 +2199,13 @@
 
             <div class="section-title">
 
-                <h2>Gallery</h2>
+                <span class="section-label">
+                    Gallery
+                </span>
+
+                <h2>
+                    Professional & Academic Gallery
+                </h2>
 
                 <p>
                     Selected professional and academic images.
@@ -1589,17 +2216,52 @@
 
             <div class="gallery-grid">
 
-                <img src="https://eyoram12.github.io/Eyoram-github.io/profile.jpg"
-                    alt="Professional profile">
+                <div class="gallery-item">
 
-                <img src="https://eyoram12.github.io/Eyoram-github.io/research.jpg"
-                    alt="Research">
+                    <img src="profile.jpg"
+                        alt="Professional profile of Getahun Bedada Feye">
 
-                <img src="https://eyoram12.github.io/Eyoram-github.io/certificate.jpg"
-                    alt="Certificate">
+                    <div class="gallery-caption">
+                        Professional Profile
+                    </div>
 
-                <img src="https://eyoram12.github.io/Eyoram-github.io/presentation.jpg"
-                    alt="Academic presentation">
+                </div>
+
+
+                <div class="gallery-item">
+
+                    <img src="research.jpg"
+                        alt="Research activity">
+
+                    <div class="gallery-caption">
+                        Research Activity
+                    </div>
+
+                </div>
+
+
+                <div class="gallery-item">
+
+                    <img src="certificate.jpg"
+                        alt="Academic certificate">
+
+                    <div class="gallery-caption">
+                        Academic Achievement
+                    </div>
+
+                </div>
+
+
+                <div class="gallery-item">
+
+                    <img src="presentation.jpg"
+                        alt="Academic presentation">
+
+                    <div class="gallery-caption">
+                        Academic Presentation
+                    </div>
+
+                </div>
 
             </div>
 
@@ -1618,7 +2280,13 @@
 
             <div class="section-title">
 
-                <h2>Professional Profiles</h2>
+                <span class="section-label">
+                    Connect
+                </span>
+
+                <h2>
+                    Professional Profiles
+                </h2>
 
                 <p>
                     Connect with me through my professional and academic profiles.
@@ -1632,18 +2300,26 @@
                 <a class="profile-link"
                     href="https://www.linkedin.com/in/eyoram-chrsts-b42883244"
                     target="_blank">
+
                     LinkedIn
+
                 </a>
+
 
                 <a class="profile-link"
                     href="https://orcid.org/0009-0007-8182-3648"
                     target="_blank">
+
                     ORCID
+
                 </a>
+
 
                 <a class="profile-link"
                     href="mailto:bedanehgetaneh@gmail.com">
+
                     Email Me
+
                 </a>
 
             </div>
@@ -1663,7 +2339,13 @@
 
             <div class="section-title">
 
-                <h2>Contact Me</h2>
+                <span class="section-label">
+                    Contact
+                </span>
+
+                <h2>
+                    Contact Me
+                </h2>
 
                 <p>
                     For research collaboration, professional opportunities,
@@ -1678,22 +2360,37 @@
                 <form action="https://formspree.io/f/xwlkovzg"
                     method="POST">
 
-                    <input
-                        type="text"
-                        name="name"
-                        placeholder="Your Name"
-                        required>
+                    <div class="form-group">
 
-                    <input
-                        type="email"
-                        name="email"
-                        placeholder="Your Email"
-                        required>
+                        <input
+                            type="text"
+                            name="name"
+                            placeholder="Your Name"
+                            required>
 
-                    <textarea
-                        name="message"
-                        placeholder="Your Message"
-                        required></textarea>
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <input
+                            type="email"
+                            name="email"
+                            placeholder="Your Email"
+                            required>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <textarea
+                            name="message"
+                            placeholder="Your Message"
+                            required></textarea>
+
+                    </div>
+
 
                     <button type="submit">
                         Send Message
@@ -1722,41 +2419,67 @@
             Field Epidemiology | Public Health Research | Disease Surveillance
         </p>
 
+        <p>
+            <a href="mailto:bedanehgetaneh@gmail.com">
+                bedanehgetaneh@gmail.com
+            </a>
+        </p>
+
     </footer>
 
 
     <!-- =========================
-         MOBILE BOTTOM NAV
+         MOBILE BOTTOM NAVIGATION
     ========================== -->
 
     <div class="mobile-nav">
 
         <a href="#home">
+
             <span>⌂</span>
+
             Home
+
         </a>
+
 
         <a href="#research">
+
             <span>▣</span>
+
             Research
+
         </a>
+
 
         <a href="#projects">
+
             <span>◆</span>
+
             Projects
+
         </a>
+
 
         <a href="#cv">
+
             <span>▤</span>
+
             CV
+
         </a>
 
+
         <a href="#contact">
+
             <span>✉</span>
+
             Contact
+
         </a>
 
     </div>
+
 
 </body>
 
