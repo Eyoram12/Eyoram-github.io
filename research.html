@@ -2,21 +2,15 @@
 <html lang="en">
 
 <head>
-
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Research Portfolio | Getahun Bedada Feye</title>
+    <title>Research | Getahun Bedada Feye</title>
 
     <meta name="description"
-        content="Research portfolio of Getahun Bedada Feye covering field epidemiology, malaria epidemiology, climate and health, disease surveillance, time-series analysis, forecasting, and health data analysis.">
+        content="Research portfolio of Getahun Bedada Feye, Field Epidemiology and Public Health Researcher.">
 
     <style>
-
-        /* =========================
-           GLOBAL
-        ========================== */
 
         * {
             box-sizing: border-box;
@@ -30,9 +24,9 @@
 
         body {
             font-family: Arial, Helvetica, sans-serif;
-            line-height: 1.7;
-            background: #f4f7fb;
-            color: #243447;
+            line-height: 1.6;
+            color: #1f2937;
+            background: #f5f7fb;
         }
 
         a {
@@ -45,317 +39,165 @@
             display: block;
         }
 
-        section {
-            padding: 80px 20px;
-            scroll-margin-top: 75px;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: auto;
-        }
-
-
-        /* =========================
-           HEADER
-        ========================== */
+        /* HEADER */
 
         header {
             position: sticky;
             top: 0;
             z-index: 1000;
-            background: rgba(255, 255, 255, 0.97);
-            border-bottom: 1px solid #e5eaf0;
-            box-shadow: 0 3px 18px rgba(0, 0, 0, 0.06);
+            background: #ffffff;
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
         }
 
         .nav-container {
-            max-width: 1250px;
+            max-width: 1200px;
             margin: auto;
-            padding: 15px 22px;
+            padding: 16px 20px;
             display: flex;
             align-items: center;
             justify-content: space-between;
-            gap: 25px;
         }
 
         .logo {
-            font-size: 21px;
-            font-weight: 800;
-            color: #123b63;
-            white-space: nowrap;
+            font-size: 24px;
+            font-weight: 700;
+            color: #0b3d91;
         }
 
         nav {
             display: flex;
+            gap: 22px;
             align-items: center;
-            justify-content: flex-end;
-            gap: 20px;
-            flex-wrap: wrap;
         }
 
         nav a {
-            font-size: 13px;
-            font-weight: 700;
+            font-size: 14px;
+            font-weight: 600;
             color: #374151;
-            transition: 0.25s ease;
+            transition: 0.3s;
         }
 
         nav a:hover {
-            color: #1769aa;
+            color: #0b63ce;
         }
 
-
-        /* =========================
-           HERO
-        ========================== */
+        /* HERO */
 
         .hero {
-            background:
-                linear-gradient(135deg, #0d3557 0%, #145b8d 55%, #1769aa 100%);
+            background: linear-gradient(135deg, #062b63, #0b63ce);
             color: white;
-            padding: 90px 20px 105px;
-            position: relative;
-            overflow: hidden;
+            padding: 85px 20px;
         }
 
-        .hero::before {
-            content: "";
-            position: absolute;
-            width: 430px;
-            height: 430px;
-            border-radius: 50%;
-            background: rgba(255, 255, 255, 0.05);
-            top: -200px;
-            right: -120px;
-        }
-
-        .hero::after {
-            content: "";
-            position: absolute;
-            width: 300px;
-            height: 300px;
-            border-radius: 50%;
-            background: rgba(255, 255, 255, 0.04);
-            bottom: -170px;
-            left: -100px;
-        }
-
-        .hero-grid {
-            max-width: 1200px;
+        .hero-container {
+            max-width: 1150px;
             margin: auto;
             display: grid;
-            grid-template-columns: 1.2fr 0.8fr;
-            gap: 55px;
+            grid-template-columns: 1.3fr 0.7fr;
+            gap: 50px;
             align-items: center;
-            position: relative;
-            z-index: 2;
-        }
-
-        .hero-label {
-            display: inline-block;
-            padding: 7px 15px;
-            border: 1px solid rgba(255,255,255,0.35);
-            background: rgba(255,255,255,0.10);
-            border-radius: 30px;
-            font-size: 12px;
-            font-weight: 800;
-            letter-spacing: 1px;
-            margin-bottom: 20px;
         }
 
         .hero h1 {
-            font-size: 48px;
-            line-height: 1.15;
+            font-size: 46px;
             margin-bottom: 18px;
-            letter-spacing: -1px;
-        }
-
-        .hero h2 {
-            font-size: 22px;
-            line-height: 1.5;
-            font-weight: 500;
-            color: #dceeff;
-            margin-bottom: 20px;
+            line-height: 1.15;
         }
 
         .hero p {
-            max-width: 760px;
-            font-size: 16px;
-            line-height: 1.8;
-            color: #eef8ff;
-        }
-
-        .hero-image {
-            background: rgba(255,255,255,0.12);
-            padding: 9px;
-            border-radius: 16px;
-            box-shadow: 0 15px 45px rgba(0,0,0,0.20);
+            font-size: 18px;
+            max-width: 700px;
+            color: #e8f1ff;
         }
 
         .hero-image img {
             width: 100%;
-            height: 330px;
-            object-fit: cover;
-            border-radius: 10px;
+            max-width: 390px;
+            margin: auto;
+            border-radius: 20px;
+            border: 5px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25);
         }
 
+        /* GENERAL */
 
-        /* =========================
-           BUTTONS
-        ========================== */
-
-        .buttons {
-            margin-top: 28px;
-            display: flex;
-            flex-wrap: wrap;
-            gap: 12px;
+        .section {
+            padding: 75px 20px;
         }
 
-        .btn {
-            display: inline-block;
-            padding: 13px 21px;
-            border-radius: 8px;
-            font-weight: 700;
-            font-size: 14px;
-            transition: 0.25s ease;
+        .container {
+            max-width: 1150px;
+            margin: auto;
         }
-
-        .btn-primary {
-            background: white;
-            color: #123b63;
-        }
-
-        .btn-secondary {
-            border: 1px solid rgba(255,255,255,0.8);
-            color: white;
-            background: transparent;
-        }
-
-        .btn:hover {
-            transform: translateY(-3px);
-        }
-
-        .btn-secondary:hover {
-            background: white;
-            color: #123b63;
-        }
-
-
-        /* =========================
-           SECTION TITLES
-        ========================== */
 
         .section-title {
             text-align: center;
             margin-bottom: 45px;
         }
 
-        .section-label {
-            display: inline-block;
-            color: #1769aa;
-            font-size: 12px;
-            font-weight: 800;
-            letter-spacing: 1.5px;
-            margin-bottom: 8px;
-            text-transform: uppercase;
-        }
-
         .section-title h2 {
-            color: #123b63;
             font-size: 34px;
-            line-height: 1.3;
-            margin-bottom: 11px;
+            color: #082f67;
+            margin-bottom: 10px;
         }
 
         .section-title p {
-            max-width: 780px;
-            margin: auto;
             color: #6b7280;
-            font-size: 15px;
+            max-width: 750px;
+            margin: auto;
         }
 
+        /* OVERVIEW */
 
-        /* =========================
-           OVERVIEW
-        ========================== */
-
-        #overview {
-            background: white;
-        }
-
-        .overview-grid {
+        .overview {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 28px;
-            align-items: stretch;
-        }
-
-        .overview-card {
-            background: #f8fafc;
-            border: 1px solid #e5ebf1;
-            border-radius: 14px;
-            padding: 30px;
-        }
-
-        .overview-card h3 {
-            color: #123b63;
-            font-size: 21px;
-            margin-bottom: 15px;
-        }
-
-        .overview-card p {
-            color: #5b6470;
-            font-size: 15px;
-            margin-bottom: 13px;
-        }
-
-        .overview-image {
-            overflow: hidden;
-            border-radius: 14px;
-            min-height: 300px;
-            box-shadow: 0 7px 22px rgba(0,0,0,0.08);
+            gap: 45px;
+            align-items: center;
         }
 
         .overview-image img {
             width: 100%;
-            height: 100%;
-            min-height: 300px;
+            max-height: 450px;
             object-fit: cover;
+            border-radius: 18px;
+            box-shadow: 0 12px 35px rgba(0, 0, 0, 0.12);
         }
 
-
-        /* =========================
-           PROJECTS
-        ========================== */
-
-        #projects {
-            background: #f4f7fb;
+        .overview-text h3 {
+            font-size: 28px;
+            color: #082f67;
+            margin-bottom: 15px;
         }
 
-        .project-list {
+        .overview-text p {
+            margin-bottom: 15px;
+            color: #4b5563;
+        }
+
+        /* RESEARCH PROJECTS */
+
+        .projects {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            gap: 25px;
+            gap: 30px;
         }
 
         .project-card {
             background: white;
-            border-radius: 15px;
+            border-radius: 18px;
             overflow: hidden;
-            border: 1px solid #e2e9ef;
-            box-shadow: 0 6px 20px rgba(0,0,0,0.06);
-            transition: 0.3s ease;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+            transition: 0.3s;
         }
 
         .project-card:hover {
-            transform: translateY(-6px);
-            box-shadow: 0 14px 32px rgba(0,0,0,0.10);
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
         }
 
         .project-image {
-            position: relative;
-            height: 220px;
+            height: 230px;
             overflow: hidden;
         }
 
@@ -363,512 +205,411 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
-            transition: 0.4s ease;
-        }
-
-        .project-card:hover .project-image img {
-            transform: scale(1.04);
-        }
-
-        .project-number {
-            position: absolute;
-            top: 15px;
-            left: 15px;
-            background: #123b63;
-            color: white;
-            padding: 6px 11px;
-            border-radius: 20px;
-            font-size: 11px;
-            font-weight: 800;
         }
 
         .project-content {
             padding: 28px;
         }
 
-        .project-status {
-            display: inline-block;
-            padding: 5px 11px;
-            border-radius: 20px;
-            background: #eaf4fb;
-            color: #1769aa;
-            font-size: 11px;
-            font-weight: 800;
-            margin-bottom: 14px;
+        .project-number {
+            font-size: 13px;
+            font-weight: 700;
+            color: #0b63ce;
+            margin-bottom: 8px;
         }
 
         .project-content h3 {
-            color: #123b63;
-            font-size: 20px;
-            line-height: 1.45;
+            font-size: 21px;
+            color: #082f67;
             margin-bottom: 15px;
         }
 
         .project-content p {
-            color: #5b6470;
-            font-size: 14px;
-            margin-bottom: 18px;
+            color: #5b6472;
+            font-size: 15px;
+            margin-bottom: 12px;
         }
 
-        .details {
-            border-top: 1px solid #e4eaf0;
-            padding-top: 17px;
+        .project-content strong {
+            color: #26364a;
         }
 
-        .detail-row {
-            display: grid;
-            grid-template-columns: 110px 1fr;
-            gap: 10px;
-            margin-bottom: 9px;
-            font-size: 13px;
+        .status {
+            display: inline-block;
+            margin-top: 8px;
+            padding: 6px 12px;
+            border-radius: 20px;
+            background: #e8f1ff;
+            color: #0b3d91;
+            font-size: 12px;
+            font-weight: 700;
         }
 
-        .detail-label {
-            color: #123b63;
-            font-weight: 800;
-        }
+        /* RESEARCH AREAS */
 
-        .detail-value {
-            color: #68717c;
-        }
-
-
-        /* =========================
-           RESEARCH AREAS
-        ========================== */
-
-        #areas {
-            background: white;
-        }
-
-        .areas-grid {
+        .areas {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
-            gap: 18px;
+            gap: 20px;
         }
 
         .area-card {
-            background: #f8fafc;
-            padding: 24px 20px;
-            border-radius: 12px;
-            border: 1px solid #e3eaf0;
+            background: white;
+            padding: 28px 20px;
+            border-radius: 15px;
             text-align: center;
-            transition: 0.25s ease;
+            box-shadow: 0 7px 20px rgba(0, 0, 0, 0.07);
+            transition: 0.3s;
         }
 
         .area-card:hover {
-            transform: translateY(-5px);
-            border-color: #1769aa;
-            box-shadow: 0 8px 22px rgba(0,0,0,0.07);
+            transform: translateY(-4px);
         }
 
-        .area-number {
-            color: #1769aa;
-            font-size: 11px;
-            font-weight: 800;
-            letter-spacing: 1px;
-            margin-bottom: 9px;
+        .area-icon {
+            font-size: 32px;
+            margin-bottom: 12px;
         }
 
         .area-card h3 {
-            color: #123b63;
-            font-size: 16px;
-            line-height: 1.4;
+            font-size: 17px;
+            color: #082f67;
         }
 
+        /* METHODS */
 
-        /* =========================
-           METHODS
-        ========================== */
-
-        #methods {
-            background: #f4f7fb;
-        }
-
-        .methods-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 17px;
-        }
-
-        .method {
-            background: white;
-            padding: 22px;
-            border-radius: 10px;
-            border: 1px solid #e3eaf0;
-            text-align: center;
-            color: #123b63;
-            font-size: 14px;
-            font-weight: 700;
-            transition: 0.25s ease;
-        }
-
-        .method:hover {
-            transform: translateY(-4px);
-            border-color: #1769aa;
-            box-shadow: 0 7px 18px rgba(0,0,0,0.06);
-        }
-
-
-        /* =========================
-           ACADEMIC GALLERY
-        ========================== */
-
-        #gallery {
-            background: white;
-        }
-
-        .gallery-grid {
+        .methods {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             gap: 20px;
         }
 
-        .gallery-card {
-            background: #f8fafc;
-            border-radius: 13px;
+        .method-card {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            border-left: 4px solid #0b63ce;
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+        }
+
+        .method-card h3 {
+            color: #082f67;
+            font-size: 18px;
+            margin-bottom: 8px;
+        }
+
+        .method-card p {
+            color: #606b7a;
+            font-size: 14px;
+        }
+
+        /* PUBLICATION HISTORY */
+
+        .publication-intro {
+            max-width: 800px;
+            margin: -25px auto 40px;
+            text-align: center;
+            color: #5f6875;
+        }
+
+        .publication-list {
+            display: grid;
+            gap: 22px;
+        }
+
+        .publication-card {
+            background: #ffffff;
+            padding: 28px;
+            border-radius: 16px;
+            box-shadow: 0 7px 22px rgba(0, 0, 0, 0.07);
+            border-left: 5px solid #0b63ce;
+        }
+
+        .publication-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 20px;
+            margin-bottom: 12px;
+        }
+
+        .publication-card h3 {
+            color: #082f67;
+            font-size: 20px;
+            line-height: 1.4;
+        }
+
+        .publication-status {
+            white-space: nowrap;
+            padding: 6px 12px;
+            border-radius: 20px;
+            background: #e8f1ff;
+            color: #0b3d91;
+            font-size: 11px;
+            font-weight: 700;
+        }
+
+        .publication-card p {
+            color: #596575;
+            font-size: 15px;
+            margin-bottom: 8px;
+        }
+
+        .publication-card strong {
+            color: #26364a;
+        }
+
+        /* RESEARCH APPROACH */
+
+        .approach {
+            background: white;
+            border-radius: 20px;
+            padding: 45px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.07);
+        }
+
+        .approach h3 {
+            color: #082f67;
+            font-size: 26px;
+            margin-bottom: 15px;
+        }
+
+        .approach p {
+            color: #555f6e;
+            margin-bottom: 15px;
+        }
+
+        /* GALLERY */
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 22px;
+        }
+
+        .gallery-item {
+            background: white;
+            border-radius: 16px;
             overflow: hidden;
-            border: 1px solid #e3eaf0;
-            box-shadow: 0 5px 18px rgba(0,0,0,0.06);
+            box-shadow: 0 7px 22px rgba(0, 0, 0, 0.08);
         }
 
-        .gallery-card img {
+        .gallery-item img {
             width: 100%;
-            height: 245px;
+            height: 260px;
             object-fit: cover;
-            transition: 0.3s ease;
-        }
-
-        .gallery-card:hover img {
-            transform: scale(1.03);
         }
 
         .gallery-caption {
             padding: 15px;
+            font-weight: 600;
+            color: #243b5a;
             text-align: center;
-            color: #123b63;
-            font-size: 13px;
-            font-weight: 700;
         }
 
+        /* CONTACT */
 
-        /* =========================
-           RESEARCH APPROACH
-        ========================== */
-
-        #approach {
-            background: #f4f7fb;
+        .contact-section {
+            background: linear-gradient(135deg, #082f67, #0b63ce);
+            color: white;
+            text-align: center;
         }
 
-        .approach-box {
-            max-width: 950px;
-            margin: auto;
-            background: white;
-            padding: 35px;
-            border-radius: 14px;
-            border-left: 5px solid #1769aa;
-            box-shadow: 0 6px 20px rgba(0,0,0,0.06);
-        }
-
-        .approach-box h3 {
-            color: #123b63;
-            font-size: 21px;
+        .contact-section h2 {
+            font-size: 34px;
             margin-bottom: 15px;
         }
 
-        .approach-box p {
-            color: #5b6470;
-            font-size: 15px;
-            margin-bottom: 13px;
+        .contact-section p {
+            max-width: 700px;
+            margin: auto auto 25px;
+            color: #e8f1ff;
         }
 
-
-        /* =========================
-           CONTACT CTA
-        ========================== */
-
-        #contact {
-            background: white;
+        .contact-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
         }
 
-        .contact-box {
-            max-width: 900px;
-            margin: auto;
-            text-align: center;
-            background: linear-gradient(135deg, #123b63, #1769aa);
-            color: white;
-            padding: 48px 30px;
-            border-radius: 16px;
-            box-shadow: 0 12px 35px rgba(18,59,99,0.18);
-        }
-
-        .contact-box h2 {
-            font-size: 28px;
-            margin-bottom: 12px;
-        }
-
-        .contact-box p {
-            max-width: 680px;
-            margin: 0 auto 25px;
-            color: #e7f3ff;
-            font-size: 15px;
-        }
-
-        .contact-button {
+        .btn {
             display: inline-block;
-            background: white;
-            color: #123b63;
-            padding: 13px 24px;
+            padding: 13px 23px;
             border-radius: 8px;
-            font-size: 14px;
-            font-weight: 800;
-            transition: 0.25s ease;
+            font-weight: 700;
+            transition: 0.3s;
         }
 
-        .contact-button:hover {
-            transform: translateY(-3px);
+        .btn-light {
+            background: white;
+            color: #082f67;
         }
 
+        .btn-light:hover {
+            transform: translateY(-2px);
+        }
 
-        /* =========================
-           FOOTER
-        ========================== */
+        /* FOOTER */
 
         footer {
-            background: #0d3557;
-            color: white;
+            background: #061d3e;
+            color: #d9e3f2;
+            padding: 35px 20px;
             text-align: center;
-            padding: 35px 20px 100px;
         }
 
         footer p {
-            font-size: 13px;
-            color: #dbeafe;
-            margin-bottom: 7px;
+            margin-bottom: 8px;
+            font-size: 14px;
         }
 
         footer a {
-            color: #9ed8ff;
+            color: #8fc1ff;
         }
 
-
-        /* =========================
-           MOBILE NAV
-        ========================== */
+        /* MOBILE NAV */
 
         .mobile-nav {
             display: none;
         }
 
+        /* RESPONSIVE */
 
-        /* =========================
-           TABLET
-        ========================== */
+        @media (max-width: 900px) {
 
-        @media (max-width: 1000px) {
+            nav {
+                gap: 12px;
+            }
 
-            .hero-grid {
-                grid-template-columns: 1fr 0.8fr;
-                gap: 35px;
+            nav a {
+                font-size: 12px;
+            }
+
+            .hero-container {
+                grid-template-columns: 1fr;
+                text-align: center;
             }
 
             .hero h1 {
-                font-size: 40px;
+                font-size: 38px;
             }
 
-            .areas-grid {
+            .hero-image {
+                order: -1;
+            }
+
+            .overview {
+                grid-template-columns: 1fr;
+            }
+
+            .projects {
+                grid-template-columns: 1fr;
+            }
+
+            .areas {
                 grid-template-columns: repeat(2, 1fr);
             }
 
-            .gallery-grid {
+            .methods {
                 grid-template-columns: repeat(2, 1fr);
             }
 
+            .gallery {
+                grid-template-columns: 1fr;
+            }
         }
 
+        @media (max-width: 650px) {
 
-        /* =========================
-           MOBILE
-        ========================== */
-
-        @media (max-width: 750px) {
-
-            .nav-container {
-                justify-content: center;
-                padding: 14px 16px;
+            header {
+                position: relative;
             }
 
-            .logo {
-                font-size: 19px;
+            .nav-container {
+                padding: 14px 15px;
             }
 
             nav {
                 display: none;
             }
 
-            .hero {
-                padding: 65px 18px 85px;
+            .logo {
+                font-size: 21px;
             }
 
-            .hero-grid {
-                grid-template-columns: 1fr;
-                text-align: center;
+            .hero {
+                padding: 60px 18px;
             }
 
             .hero h1 {
-                font-size: 34px;
-            }
-
-            .hero h2 {
-                font-size: 18px;
+                font-size: 32px;
             }
 
             .hero p {
-                font-size: 15px;
+                font-size: 16px;
             }
 
-            .buttons {
-                justify-content: center;
-            }
-
-            .hero-image img {
-                height: 270px;
-            }
-
-            section {
-                padding: 60px 17px;
+            .section {
+                padding: 55px 16px;
             }
 
             .section-title h2 {
-                font-size: 27px;
+                font-size: 28px;
             }
 
-            .overview-grid {
+            .areas,
+            .methods {
                 grid-template-columns: 1fr;
             }
 
-            .project-list {
-                grid-template-columns: 1fr;
+            .approach {
+                padding: 28px 22px;
             }
 
-            .areas-grid {
-                grid-template-columns: 1fr 1fr;
-            }
-
-            .methods-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .gallery-grid {
-                grid-template-columns: 1fr 1fr;
+            .publication-top {
+                flex-direction: column;
                 gap: 10px;
             }
 
-            .gallery-card img {
-                height: 180px;
-            }
-
-            .project-content {
-                padding: 23px;
-            }
-
-            .detail-row {
-                grid-template-columns: 95px 1fr;
-            }
-
-            .approach-box {
-                padding: 25px 20px;
-            }
-
-            .contact-box {
-                padding: 35px 22px;
+            .publication-status {
+                white-space: normal;
             }
 
             .mobile-nav {
                 position: fixed;
-                display: flex;
                 bottom: 0;
                 left: 0;
                 right: 0;
                 z-index: 2000;
+                display: flex;
                 justify-content: space-around;
                 background: white;
-                border-top: 1px solid #dfe5ea;
-                box-shadow: 0 -4px 18px rgba(0,0,0,0.10);
-                padding: 8px 4px;
+                border-top: 1px solid #ddd;
+                padding: 10px 5px;
+                box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.08);
             }
 
             .mobile-nav a {
-                min-width: 55px;
-                text-align: center;
-                color: #374151;
-                font-size: 10px;
-                font-weight: 700;
-            }
-
-            .mobile-nav span {
-                display: block;
-                font-size: 17px;
-                margin-bottom: 1px;
-                color: #1769aa;
-            }
-
-            footer {
-                padding-bottom: 90px;
-            }
-
-        }
-
-
-        /* =========================
-           SMALL PHONES
-        ========================== */
-
-        @media (max-width: 400px) {
-
-            .hero h1 {
-                font-size: 30px;
-            }
-
-            .areas-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .gallery-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .gallery-card img {
-                height: 230px;
-            }
-
-            .buttons {
-                flex-direction: column;
-                align-items: center;
-            }
-
-            .btn {
-                width: 100%;
-                max-width: 280px;
+                font-size: 11px;
+                color: #334155;
+                font-weight: 600;
                 text-align: center;
             }
 
+            body {
+                padding-bottom: 55px;
+            }
         }
 
     </style>
-
 </head>
-
 
 <body>
 
-
-    <!-- =========================
-         HEADER
-    ========================== -->
+    <!-- HEADER -->
 
     <header>
-
         <div class="nav-container">
 
             <a href="index.html" class="logo">
@@ -876,81 +617,45 @@
             </a>
 
             <nav>
-
                 <a href="index.html">Home</a>
-
                 <a href="index.html#about">About</a>
-
                 <a href="index.html#experience">Experience</a>
-
                 <a href="index.html#education">Education</a>
-
                 <a href="#projects">Research</a>
-
-                <a href="#areas">Research Areas</a>
-
+                <a href="#publications">Publications</a>
                 <a href="#methods">Methods</a>
-
-                <a href="index.html#cv">CV</a>
-
-                <a href="index.html#contact">Contact</a>
-
+                <a href="#contact">Contact</a>
             </nav>
 
         </div>
-
     </header>
 
 
-    <!-- =========================
-         HERO
-    ========================== -->
+    <!-- HERO -->
 
     <section class="hero">
 
-        <div class="hero-grid">
+        <div class="hero-container">
 
             <div>
-
-                <span class="hero-label">
-                    RESEARCH PORTFOLIO
-                </span>
 
                 <h1>
                     Research & Epidemiological Work
                 </h1>
 
-                <h2>
-                    Field Epidemiology | Public Health Research | Disease Surveillance
-                </h2>
-
                 <p>
-                    My research focuses on understanding disease patterns,
-                    identifying risk factors, evaluating surveillance systems,
-                    examining climate and health relationships, and applying
-                    statistical and epidemiological methods to support
-                    evidence-based public health decisions.
+                    My research focuses on field epidemiology, malaria epidemiology,
+                    disease surveillance, climate and health, health data analysis,
+                    temporal and seasonal patterns, forecasting, and evidence-based
+                    public health decision-making.
                 </p>
 
-                <div class="buttons">
-
-                    <a href="index.html" class="btn btn-primary">
-                        ← Back to Homepage
-                    </a>
-
-                    <a href="#projects" class="btn btn-secondary">
-                        View Research Projects
-                    </a>
-
-                </div>
-
             </div>
-
 
             <div class="hero-image">
 
                 <img src="research.jpg"
-                    alt="Research activity">
+                    alt="Getahun Bedada Feye conducting public health research">
 
             </div>
 
@@ -959,69 +664,59 @@
     </section>
 
 
-    <!-- =========================
-         RESEARCH OVERVIEW
-    ========================== -->
+    <!-- RESEARCH OVERVIEW -->
 
-    <section id="overview">
+    <section class="section">
 
         <div class="container">
 
             <div class="section-title">
 
-                <span class="section-label">
-                    Research Profile
-                </span>
-
-                <h2>
-                    Research Overview
-                </h2>
+                <h2>Research Overview</h2>
 
                 <p>
-                    Applied epidemiological research focused on public health
-                    problems and the use of health data for decision-making.
+                    Areas of research and epidemiological work focused on
+                    generating evidence for public health practice.
                 </p>
 
             </div>
 
-
-            <div class="overview-grid">
-
-                <div class="overview-card">
-
-                    <h3>
-                        Research Focus
-                    </h3>
-
-                    <p>
-                        My research interests are centered on field epidemiology,
-                        malaria epidemiology, disease surveillance, climate and
-                        health, temporal and seasonal disease patterns, and
-                        health data analysis.
-                    </p>
-
-                    <p>
-                        I am particularly interested in applying quantitative
-                        epidemiological methods to understand disease patterns,
-                        identify important determinants, assess surveillance
-                        performance, and develop evidence that can support
-                        public health planning.
-                    </p>
-
-                    <p>
-                        My current work includes retrospective studies,
-                        time-series analysis, climate-disease association
-                        analysis, lag-effect analysis, forecasting, and
-                        spatial analysis.
-                    </p>
-
-                </div>
-
+            <div class="overview">
 
                 <div class="overview-image">
 
                     <img src="presentation.jpg"
-                        alt="Academic presentation">
+                        alt="Research presentation">
+
+                </div>
+
+                <div class="overview-text">
+
+                    <h3>
+                        Evidence-Based Public Health Research
+                    </h3>
+
+                    <p>
+                        My research interests are centered on the application of
+                        epidemiological methods and health data to understand
+                        disease patterns, identify risk factors, evaluate
+                        surveillance systems, and support public health
+                        interventions.
+                    </p>
+
+                    <p>
+                        I have particular interest in malaria epidemiology,
+                        climate-sensitive diseases, disease surveillance,
+                        temporal trends, seasonal patterns, spatial analysis,
+                        forecasting, and statistical modelling.
+                    </p>
+
+                    <p>
+                        My research approach emphasizes the use of routinely
+                        collected health data, environmental data, and
+                        epidemiological methods to generate practical evidence
+                        for disease prevention and control.
+                    </p>
 
                 </div>
 
@@ -1032,33 +727,24 @@
     </section>
 
 
-    <!-- =========================
-         RESEARCH PROJECTS
-    ========================== -->
+    <!-- RESEARCH PROJECTS -->
 
-    <section id="projects">
+    <section class="section" id="projects">
 
         <div class="container">
 
             <div class="section-title">
 
-                <span class="section-label">
-                    Current Research
-                </span>
-
-                <h2>
-                    Research Projects
-                </h2>
+                <h2>Current Research Projects</h2>
 
                 <p>
-                    Selected research projects covering malaria, climate and
-                    health, disease surveillance, forecasting, and disease trends.
+                    Selected research projects and manuscripts currently
+                    conducted, prepared, or under review.
                 </p>
 
             </div>
 
-
-            <div class="project-list">
+            <div class="projects">
 
 
                 <!-- PROJECT 1 -->
@@ -1070,92 +756,51 @@
                         <img src="research.jpg"
                             alt="Malaria and climate research">
 
-                        <span class="project-number">
-                            PROJECT 01
-                        </span>
-
                     </div>
-
 
                     <div class="project-content">
 
-                        <span class="project-status">
-                            DATA COLLECTION
-                        </span>
+                        <div class="project-number">
+                            PROJECT 01
+                        </div>
 
                         <h3>
-                            Attribution of Climate Variability to Malaria
-                            Incidence and Forecasting for Further Interventions
-                            in East Hararghe Zone, Oromia Region, Ethiopia
-                            (2016–2025)
+                            Attribution of Climate Variability to Malaria Incidence
+                            and Forecasting for Further Interventions in East
+                            Hararghe Zone, Oromia Region, Ethiopia, 2016–2025
                         </h3>
 
                         <p>
-                            This research assesses the effect of climate
-                            variables on malaria incidence and develops a
-                            forecasting model to support malaria prevention
-                            and control efforts in East Hararghe Zone,
-                            Oromia Region, Ethiopia.
+                            <strong>Status:</strong>
+                            Data Collection
                         </p>
 
+                        <p>
+                            <strong>Study Area:</strong>
+                            East Hararghe Zone, Oromia Region, Ethiopia
+                        </p>
 
-                        <div class="details">
+                        <p>
+                            <strong>Study Period:</strong>
+                            2016–2025
+                        </p>
 
-                            <div class="detail-row">
+                        <p>
+                            <strong>Data Sources:</strong>
+                            DHIS2 malaria data, Ethiopian Meteorological Agency
+                            climate data, and relevant intervention data.
+                        </p>
 
-                                <span class="detail-label">
-                                    Study Area
-                                </span>
+                        <p>
+                            <strong>Methods:</strong>
+                            Retrospective ecological time-series analysis,
+                            climate-malaria association analysis, lag-effect
+                            analysis, and forecasting.
+                        </p>
 
-                                <span class="detail-value">
-                                    East Hararghe Zone, Oromia Region, Ethiopia
-                                </span>
-
-                            </div>
-
-
-                            <div class="detail-row">
-
-                                <span class="detail-label">
-                                    Study Period
-                                </span>
-
-                                <span class="detail-value">
-                                    2016–2025
-                                </span>
-
-                            </div>
-
-
-                            <div class="detail-row">
-
-                                <span class="detail-label">
-                                    Data Sources
-                                </span>
-
-                                <span class="detail-value">
-                                    DHIS2 malaria data, Ethiopian Meteorological
-                                    Agency climate data, and relevant intervention data
-                                </span>
-
-                            </div>
-
-
-                            <div class="detail-row">
-
-                                <span class="detail-label">
-                                    Methods
-                                </span>
-
-                                <span class="detail-value">
-                                    Retrospective ecological time-series analysis,
-                                    climate-malaria association analysis,
-                                    lag analysis, and forecasting
-                                </span>
-
-                            </div>
-
-                        </div>
+                        <span class="status">
+                            DATA COLLECTION
+                        </span>
 
                     </div>
 
@@ -1168,21 +813,16 @@
 
                     <div class="project-image">
 
-                        <img src="profile.jpg"
-                            alt="Malaria epidemiology research">
-
-                        <span class="project-number">
-                            PROJECT 02
-                        </span>
+                        <img src="presentation.jpg"
+                            alt="Malaria epidemiology research presentation">
 
                     </div>
 
-
                     <div class="project-content">
 
-                        <span class="project-status">
-                            UNDER REVIEW
-                        </span>
+                        <div class="project-number">
+                            PROJECT 02
+                        </div>
 
                         <h3>
                             Determinants of Malaria in Haramaya District,
@@ -1190,68 +830,35 @@
                         </h3>
 
                         <p>
-                            This research focuses on identifying factors
-                            associated with malaria in Haramaya District,
-                            Oromia Region, Eastern Ethiopia.
+                            <strong>Status:</strong>
+                            Under Review
                         </p>
 
-                        <div class="details">
+                        <p>
+                            <strong>Study Area:</strong>
+                            Haramaya District, Oromia Region, Ethiopia
+                        </p>
 
-                            <div class="detail-row">
+                        <p>
+                            <strong>Year:</strong>
+                            2026
+                        </p>
 
-                                <span class="detail-label">
-                                    Study Area
-                                </span>
+                        <p>
+                            <strong>Focus:</strong>
+                            Identification of factors associated with malaria
+                            using epidemiological analysis.
+                        </p>
 
-                                <span class="detail-value">
-                                    Haramaya District, Oromia Region,
-                                    Eastern Ethiopia
-                                </span>
+                        <p>
+                            <strong>Publication:</strong>
+                            Manuscript submitted to the Journal of Interventional
+                            Epidemiology and Public Health.
+                        </p>
 
-                            </div>
-
-
-                            <div class="detail-row">
-
-                                <span class="detail-label">
-                                    Year
-                                </span>
-
-                                <span class="detail-value">
-                                    2026
-                                </span>
-
-                            </div>
-
-
-                            <div class="detail-row">
-
-                                <span class="detail-label">
-                                    Research Focus
-                                </span>
-
-                                <span class="detail-value">
-                                    Assessment of factors associated with
-                                    malaria and their public health implications
-                                </span>
-
-                            </div>
-
-
-                            <div class="detail-row">
-
-                                <span class="detail-label">
-                                    Publication
-                                </span>
-
-                                <span class="detail-value">
-                                    Manuscript under editorial and peer-review
-                                    processes at JIEPH
-                                </span>
-
-                            </div>
-
-                        </div>
+                        <span class="status">
+                            UNDER REVIEW
+                        </span>
 
                     </div>
 
@@ -1265,89 +872,52 @@
                     <div class="project-image">
 
                         <img src="certificate.jpg"
-                            alt="Disease surveillance research">
-
-                        <span class="project-number">
-                            PROJECT 03
-                        </span>
+                            alt="Public health research and surveillance work">
 
                     </div>
 
-
                     <div class="project-content">
 
-                        <span class="project-status">
-                            MANUSCRIPT WRITING
-                        </span>
+                        <div class="project-number">
+                            PROJECT 03
+                        </div>
 
                         <h3>
-                            Malaria Surveillance System Evaluation and Trends
-                            in Kombolcha District, East Hararghe Zone,
-                            Oromia Region, Ethiopia, 2026
+                            Malaria Surveillance System Evaluation and Trends in
+                            Kombolcha District, East Hararghe Zone, Oromia Region,
+                            Ethiopia, 2026
                         </h3>
 
                         <p>
-                            This research evaluates the malaria surveillance
-                            system and analyzes malaria trends using available
-                            surveillance data from Kombolcha District.
+                            <strong>Status:</strong>
+                            Manuscript Writing
                         </p>
 
-                        <div class="details">
+                        <p>
+                            <strong>Study Area:</strong>
+                            Kombolcha District, East Hararghe Zone,
+                            Oromia Region, Ethiopia
+                        </p>
 
-                            <div class="detail-row">
+                        <p>
+                            <strong>Year:</strong>
+                            2026
+                        </p>
 
-                                <span class="detail-label">
-                                    Study Area
-                                </span>
+                        <p>
+                            <strong>Data:</strong>
+                            Malaria surveillance data.
+                        </p>
 
-                                <span class="detail-value">
-                                    Kombolcha District, East Hararghe Zone,
-                                    Oromia Region, Ethiopia
-                                </span>
+                        <p>
+                            <strong>Methods:</strong>
+                            Surveillance system evaluation and malaria
+                            trend analysis.
+                        </p>
 
-                            </div>
-
-
-                            <div class="detail-row">
-
-                                <span class="detail-label">
-                                    Year
-                                </span>
-
-                                <span class="detail-value">
-                                    2026
-                                </span>
-
-                            </div>
-
-
-                            <div class="detail-row">
-
-                                <span class="detail-label">
-                                    Data
-                                </span>
-
-                                <span class="detail-value">
-                                    Malaria surveillance data
-                                </span>
-
-                            </div>
-
-
-                            <div class="detail-row">
-
-                                <span class="detail-label">
-                                    Methods
-                                </span>
-
-                                <span class="detail-value">
-                                    Surveillance system evaluation and
-                                    malaria trend analysis
-                                </span>
-
-                            </div>
-
-                        </div>
+                        <span class="status">
+                            MANUSCRIPT WRITING
+                        </span>
 
                     </div>
 
@@ -1360,89 +930,52 @@
 
                     <div class="project-image">
 
-                        <img src="presentation.jpg"
-                            alt="Priority disease research">
-
-                        <span class="project-number">
-                            PROJECT 04
-                        </span>
+                        <img src="research.jpg"
+                            alt="Disease trends and seasonal research">
 
                     </div>
 
-
                     <div class="project-content">
 
-                        <span class="project-status">
-                            MANUSCRIPT EDITING
-                        </span>
+                        <div class="project-number">
+                            PROJECT 04
+                        </div>
 
                         <h3>
-                            Temporal, Seasonal, and Spatial Dynamics of
-                            Priority Diseases in East Bale Zone,
-                            Oromia Region, Ethiopia, 2023–2026
+                            Temporal, Seasonal, and Spatial Dynamics of Priority
+                            Diseases in East Bale Zone, Oromia Region, Ethiopia,
+                            2023–2026
                         </h3>
 
                         <p>
-                            This research analyzes temporal trends, seasonal
-                            patterns, and spatial distribution of priority
-                            diseases using health surveillance data.
+                            <strong>Status:</strong>
+                            Manuscript Editing
                         </p>
 
-                        <div class="details">
+                        <p>
+                            <strong>Study Area:</strong>
+                            East Bale Zone, Oromia Region, Ethiopia
+                        </p>
 
-                            <div class="detail-row">
+                        <p>
+                            <strong>Study Period:</strong>
+                            2023–2026
+                        </p>
 
-                                <span class="detail-label">
-                                    Study Area
-                                </span>
+                        <p>
+                            <strong>Data:</strong>
+                            Health surveillance data.
+                        </p>
 
-                                <span class="detail-value">
-                                    East Bale Zone, Oromia Region, Ethiopia
-                                </span>
+                        <p>
+                            <strong>Methods:</strong>
+                            Temporal trend analysis, seasonal analysis,
+                            and spatial analysis.
+                        </p>
 
-                            </div>
-
-
-                            <div class="detail-row">
-
-                                <span class="detail-label">
-                                    Study Period
-                                </span>
-
-                                <span class="detail-value">
-                                    2023–2026
-                                </span>
-
-                            </div>
-
-
-                            <div class="detail-row">
-
-                                <span class="detail-label">
-                                    Data
-                                </span>
-
-                                <span class="detail-value">
-                                    Health surveillance data
-                                </span>
-
-                            </div>
-
-
-                            <div class="detail-row">
-
-                                <span class="detail-label">
-                                    Methods
-                                </span>
-
-                                <span class="detail-value">
-                                    Temporal trend analysis, seasonal analysis,
-                                    and spatial analysis
-                                </span>
-
-                            </div>
-
-                        </div>
+                        <span class="status">
+                            MANUSCRIPT EDITING
+                        </span>
 
                     </div>
 
@@ -1455,70 +988,236 @@
     </section>
 
 
-    <!-- =========================
-         RESEARCH AREAS
-    ========================== -->
+    <!-- PUBLICATION HISTORY -->
 
-    <section id="areas">
+    <section class="section" id="publications">
 
         <div class="container">
 
             <div class="section-title">
 
-                <span class="section-label">
-                    Expertise
-                </span>
+                <h2>Publication History & Research Work</h2>
 
-                <h2>
-                    Research Areas
-                </h2>
+            </div>
+
+            <p class="publication-intro">
+
+                This section presents selected manuscripts and research work
+                according to their current publication or research status.
+
+            </p>
+
+            <div class="publication-list">
+
+
+                <!-- UNDER REVIEW -->
+
+                <article class="publication-card">
+
+                    <div class="publication-top">
+
+                        <h3>
+                            Determinants of Malaria in Haramaya District,
+                            Oromia Region, Eastern Ethiopia, 2026
+                        </h3>
+
+                        <span class="publication-status">
+                            UNDER REVIEW
+                        </span>
+
+                    </div>
+
+                    <p>
+                        <strong>Journal:</strong>
+                        Journal of Interventional Epidemiology and Public Health
+                        (JIEPH)
+                    </p>
+
+                    <p>
+                        <strong>Research Area:</strong>
+                        Malaria epidemiology and determinants of malaria
+                    </p>
+
+                    <p>
+                        <strong>Status:</strong>
+                        Manuscript submitted and currently under review.
+                    </p>
+
+                </article>
+
+
+                <!-- MANUSCRIPT EDITING -->
+
+                <article class="publication-card">
+
+                    <div class="publication-top">
+
+                        <h3>
+                            Temporal, Seasonal, and Spatial Dynamics of Priority
+                            Diseases in East Bale Zone, Oromia Region, Ethiopia,
+                            2023–2026
+                        </h3>
+
+                        <span class="publication-status">
+                            MANUSCRIPT EDITING
+                        </span>
+
+                    </div>
+
+                    <p>
+                        <strong>Research Area:</strong>
+                        Disease surveillance, temporal trends, seasonal patterns,
+                        and spatial analysis
+                    </p>
+
+                    <p>
+                        <strong>Study Area:</strong>
+                        East Bale Zone, Oromia Region, Ethiopia
+                    </p>
+
+                    <p>
+                        <strong>Status:</strong>
+                        Manuscript editing.
+                    </p>
+
+                </article>
+
+
+                <!-- MANUSCRIPT WRITING -->
+
+                <article class="publication-card">
+
+                    <div class="publication-top">
+
+                        <h3>
+                            Malaria Surveillance System Evaluation and Trends
+                            in Kombolcha District, East Hararghe Zone,
+                            Oromia Region, Ethiopia, 2026
+                        </h3>
+
+                        <span class="publication-status">
+                            MANUSCRIPT WRITING
+                        </span>
+
+                    </div>
+
+                    <p>
+                        <strong>Research Area:</strong>
+                        Malaria surveillance system evaluation and trend analysis
+                    </p>
+
+                    <p>
+                        <strong>Study Area:</strong>
+                        Kombolcha District, East Hararghe Zone,
+                        Oromia Region, Ethiopia
+                    </p>
+
+                    <p>
+                        <strong>Status:</strong>
+                        Manuscript writing.
+                    </p>
+
+                </article>
+
+
+                <!-- RESEARCH IN PROGRESS -->
+
+                <article class="publication-card">
+
+                    <div class="publication-top">
+
+                        <h3>
+                            Attribution of Climate Variability to Malaria Incidence
+                            and Forecasting for Further Interventions in East
+                            Hararghe Zone, Oromia Region, Ethiopia, 2016–2025
+                        </h3>
+
+                        <span class="publication-status">
+                            RESEARCH IN PROGRESS
+                        </span>
+
+                    </div>
+
+                    <p>
+                        <strong>Research Area:</strong>
+                        Climate and health, malaria epidemiology, time-series
+                        analysis, lag effects, and forecasting
+                    </p>
+
+                    <p>
+                        <strong>Study Period:</strong>
+                        2016–2025
+                    </p>
+
+                    <p>
+                        <strong>Status:</strong>
+                        Data collection.
+                    </p>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- RESEARCH AREAS -->
+
+    <section class="section">
+
+        <div class="container">
+
+            <div class="section-title">
+
+                <h2>Research Areas</h2>
 
                 <p>
-                    Core areas that guide my academic and professional research.
+                    Key areas of epidemiological and public health research.
                 </p>
 
             </div>
 
-
-            <div class="areas-grid">
+            <div class="areas">
 
                 <div class="area-card">
-                    <div class="area-number">AREA 01</div>
+                    <div class="area-icon">🧬</div>
                     <h3>Field Epidemiology</h3>
                 </div>
 
                 <div class="area-card">
-                    <div class="area-number">AREA 02</div>
+                    <div class="area-icon">🦟</div>
                     <h3>Malaria Epidemiology</h3>
                 </div>
 
                 <div class="area-card">
-                    <div class="area-number">AREA 03</div>
+                    <div class="area-icon">🌦️</div>
                     <h3>Climate and Health</h3>
                 </div>
 
                 <div class="area-card">
-                    <div class="area-number">AREA 04</div>
+                    <div class="area-icon">📊</div>
                     <h3>Disease Surveillance</h3>
                 </div>
 
                 <div class="area-card">
-                    <div class="area-number">AREA 05</div>
+                    <div class="area-icon">📈</div>
                     <h3>Time-Series Analysis</h3>
                 </div>
 
                 <div class="area-card">
-                    <div class="area-number">AREA 06</div>
+                    <div class="area-icon">🔮</div>
                     <h3>Forecasting</h3>
                 </div>
 
                 <div class="area-card">
-                    <div class="area-number">AREA 07</div>
+                    <div class="area-icon">💻</div>
                     <h3>Health Data Analysis</h3>
                 </div>
 
                 <div class="area-card">
-                    <div class="area-number">AREA 08</div>
+                    <div class="area-icon">🗺️</div>
                     <h3>Spatial Analysis</h3>
                 </div>
 
@@ -1529,80 +1228,155 @@
     </section>
 
 
-    <!-- =========================
-         RESEARCH METHODS
-    ========================== -->
+    <!-- RESEARCH METHODS -->
 
-    <section id="methods">
+    <section class="section" id="methods">
 
         <div class="container">
 
             <div class="section-title">
 
-                <span class="section-label">
-                    Methodology
-                </span>
-
-                <h2>
-                    Research Methods
-                </h2>
+                <h2>Research Methods</h2>
 
                 <p>
-                    Analytical approaches used in epidemiological and
+                    Epidemiological and analytical methods applied in
                     public health research.
                 </p>
 
             </div>
 
+            <div class="methods">
 
-            <div class="methods-grid">
+                <div class="method-card">
 
-                <div class="method">
-                    Retrospective Ecological Studies
+                    <h3>Retrospective Ecological Studies</h3>
+
+                    <p>
+                        Analysis of historical population-level health and
+                        environmental data.
+                    </p>
+
                 </div>
 
-                <div class="method">
-                    Time-Series Analysis
+                <div class="method-card">
+
+                    <h3>Time-Series Analysis</h3>
+
+                    <p>
+                        Analysis of disease trends over time and identification
+                        of temporal patterns.
+                    </p>
+
                 </div>
 
-                <div class="method">
-                    Temporal Trend Analysis
+                <div class="method-card">
+
+                    <h3>Temporal Trend Analysis</h3>
+
+                    <p>
+                        Assessment of changes in disease occurrence over
+                        different periods.
+                    </p>
+
                 </div>
 
-                <div class="method">
-                    Seasonal Pattern Analysis
+                <div class="method-card">
+
+                    <h3>Seasonal Pattern Analysis</h3>
+
+                    <p>
+                        Identification and interpretation of recurring
+                        seasonal disease patterns.
+                    </p>
+
                 </div>
 
-                <div class="method">
-                    Spatial Analysis and Mapping
+                <div class="method-card">
+
+                    <h3>Spatial Analysis and Mapping</h3>
+
+                    <p>
+                        Analysis and visualization of geographical variation
+                        in disease patterns.
+                    </p>
+
                 </div>
 
-                <div class="method">
-                    Climate-Disease Association Analysis
+                <div class="method-card">
+
+                    <h3>Climate-Disease Association</h3>
+
+                    <p>
+                        Assessment of relationships between climate variables
+                        and disease incidence.
+                    </p>
+
                 </div>
 
-                <div class="method">
-                    Lag-Effect Analysis
+                <div class="method-card">
+
+                    <h3>Lag-Effect Analysis</h3>
+
+                    <p>
+                        Assessment of delayed effects of climate and other
+                        exposures on disease occurrence.
+                    </p>
+
                 </div>
 
-                <div class="method">
-                    Forecasting and Predictive Modelling
+                <div class="method-card">
+
+                    <h3>Forecasting and Predictive Modelling</h3>
+
+                    <p>
+                        Development of statistical models to support future
+                        disease planning and intervention.
+                    </p>
+
                 </div>
 
-                <div class="method">
-                    Disease Surveillance System Evaluation
+                <div class="method-card">
+
+                    <h3>Surveillance System Evaluation</h3>
+
+                    <p>
+                        Evaluation of public health surveillance systems using
+                        epidemiological system attributes.
+                    </p>
+
                 </div>
 
-                <div class="method">
-                    Health Data Analysis
+                <div class="method-card">
+
+                    <h3>Health Data Analysis</h3>
+
+                    <p>
+                        Statistical analysis of routine health and
+                        epidemiological datasets.
+                    </p>
+
                 </div>
 
-                <div class="method">
-                    Statistical Analysis
+                <div class="method-card">
+
+                    <h3>Statistical Analysis</h3>
+
+                    <p>
+                        Application of statistical methods for epidemiological
+                        inference and interpretation.
+                    </p>
+
                 </div>
 
-                <div class="method">
-                    Scientific Writing
+                <div class="method-card">
+
+                    <h3>Scientific Writing</h3>
+
+                    <p>
+                        Development and preparation of scientific manuscripts,
+                        reports, and research outputs.
+                    </p>
+
                 </div>
 
             </div>
@@ -1612,52 +1386,37 @@
     </section>
 
 
-    <!-- =========================
-         RESEARCH APPROACH
-    ========================== -->
+    <!-- RESEARCH APPROACH -->
 
-    <section id="approach">
+    <section class="section">
 
         <div class="container">
 
-            <div class="section-title">
-
-                <span class="section-label">
-                    Research Approach
-                </span>
-
-                <h2>
-                    Evidence-Based Public Health Research
-                </h2>
-
-            </div>
-
-
-            <div class="approach-box">
+            <div class="approach">
 
                 <h3>
-                    From Health Data to Public Health Evidence
+                    Research Approach
                 </h3>
 
                 <p>
-                    My research approach emphasizes the systematic use of
-                    epidemiological and statistical methods to transform
-                    routine health and environmental data into useful
-                    evidence for public health decision-making.
+                    My research approach combines epidemiological thinking,
+                    statistical analysis, health surveillance data, and
+                    environmental information to generate evidence that can
+                    support public health decision-making.
                 </p>
 
                 <p>
-                    This includes examining disease trends over time,
-                    identifying seasonal patterns, assessing relationships
-                    between climate variables and disease incidence,
-                    evaluating surveillance systems, and developing
-                    forecasting models.
+                    I focus on clearly defining research questions, selecting
+                    appropriate study designs, managing and analysing health
+                    data, interpreting statistical findings, and translating
+                    evidence into practical public health recommendations.
                 </p>
 
                 <p>
-                    The overall goal is to generate practical evidence that
-                    can contribute to disease prevention, surveillance,
-                    preparedness, and improved public health planning.
+                    Particular attention is given to temporal variation,
+                    seasonal patterns, spatial distribution, climate-related
+                    health effects, surveillance performance, and forecasting
+                    of disease trends.
                 </p>
 
             </div>
@@ -1667,36 +1426,26 @@
     </section>
 
 
-    <!-- =========================
-         ACADEMIC GALLERY
-    ========================== -->
+    <!-- GALLERY -->
 
-    <section id="gallery">
+    <section class="section">
 
         <div class="container">
 
             <div class="section-title">
 
-                <span class="section-label">
-                    Academic Work
-                </span>
-
-                <h2>
-                    Research & Academic Gallery
-                </h2>
+                <h2>Research Gallery</h2>
 
                 <p>
-                    Selected images representing academic, research,
-                    and professional activities.
+                    Selected images from research, academic, and professional
+                    activities.
                 </p>
 
             </div>
 
+            <div class="gallery">
 
-            <div class="gallery-grid">
-
-
-                <div class="gallery-card">
+                <div class="gallery-item">
 
                     <img src="research.jpg"
                         alt="Research activity">
@@ -1707,30 +1456,27 @@
 
                 </div>
 
-
-                <div class="gallery-card">
+                <div class="gallery-item">
 
                     <img src="presentation.jpg"
-                        alt="Academic presentation">
+                        alt="Research presentation">
 
                     <div class="gallery-caption">
-                        Academic Presentation
+                        Research Presentation
                     </div>
 
                 </div>
 
-
-                <div class="gallery-card">
+                <div class="gallery-item">
 
                     <img src="certificate.jpg"
                         alt="Academic certificate">
 
                     <div class="gallery-caption">
-                        Academic Achievement
+                        Academic and Professional Development
                     </div>
 
                 </div>
-
 
             </div>
 
@@ -1739,32 +1485,39 @@
     </section>
 
 
-    <!-- =========================
-         CONTACT
-    ========================== -->
+    <!-- CONTACT -->
 
-    <section id="contact">
+    <section class="section contact-section" id="contact">
 
         <div class="container">
 
-            <div class="contact-box">
+            <h2>
+                Let's Connect
+            </h2>
 
-                <h2>
-                    Research Collaboration
-                </h2>
+            <p>
+                For research collaboration, epidemiological work,
+                public health research, or professional opportunities,
+                feel free to contact me.
+            </p>
 
-                <p>
-                    I welcome academic communication, research collaboration,
-                    professional opportunities, and discussion related to
-                    epidemiology, public health research, disease surveillance,
-                    health data analysis, and related areas.
-                </p>
+            <div class="contact-buttons">
 
                 <a href="mailto:bedanehgetaneh@gmail.com"
-                    class="contact-button">
+                    class="btn btn-light">
+                    Email Me
+                </a>
 
-                    Contact Me
+                <a href="https://www.linkedin.com/in/eyoram-chrsts-b42883244"
+                    target="_blank"
+                    class="btn btn-light">
+                    LinkedIn
+                </a>
 
+                <a href="https://orcid.org/0009-0007-8182-3648"
+                    target="_blank"
+                    class="btn btn-light">
+                    ORCID
                 </a>
 
             </div>
@@ -1774,9 +1527,7 @@
     </section>
 
 
-    <!-- =========================
-         FOOTER
-    ========================== -->
+    <!-- FOOTER -->
 
     <footer>
 
@@ -1785,66 +1536,40 @@
         </p>
 
         <p>
-            Field Epidemiology | Public Health Research | Disease Surveillance
-        </p>
-
-        <p>
-            <a href="mailto:bedanehgetaneh@gmail.com">
-                bedanehgetaneh@gmail.com
-            </a>
+            Field Epidemiology | Public Health Research |
+            Disease Surveillance
         </p>
 
     </footer>
 
 
-    <!-- =========================
-         MOBILE NAVIGATION
-    ========================== -->
+    <!-- MOBILE NAV -->
 
     <div class="mobile-nav">
 
         <a href="index.html">
-
-            <span>⌂</span>
-
+            🏠<br>
             Home
-
         </a>
-
 
         <a href="#projects">
-
-            <span>▣</span>
-
+            🔬<br>
             Research
-
         </a>
 
-
-        <a href="#areas">
-
-            <span>◆</span>
-
-            Areas
-
+        <a href="#publications">
+            📚<br>
+            Publications
         </a>
-
 
         <a href="#methods">
-
-            <span>▤</span>
-
+            📊<br>
             Methods
-
         </a>
 
-
         <a href="#contact">
-
-            <span>✉</span>
-
+            ✉️<br>
             Contact
-
         </a>
 
     </div>
